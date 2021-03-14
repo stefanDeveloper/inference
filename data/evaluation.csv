@@ -1,0 +1,118 @@
+Everyone has a set of principles to live by.,Someone has a set of principles to live by.,entailment
+Someone has a set of principles to live by.,Everyone has a set of principles to live by.,neutral
+Everyone has a set of principles to live by.,No one has a set of principles to live by.,contradiction
+No one has a set of principles to live by.,Everyone has a set of principles to live by.,contradiction
+Everyone has a set of principles to live by.,Susan doesn't have a set of principles to live by.,contradiction
+Susan doesn't have a set of principles to live by.,Everyone has a set of principles to live by.,contradiction
+Susan knows how turtles reproduce.,Someone knows how turtles reproduce.,entailment
+Someone knows how turtles reproduce.,Susan knows how turtles reproduce.,neutral
+Susan knows how turtles reproduce.,No one knows how turtles reproduce.,contradiction
+No one knows how turtles reproduce.,Susan knows how turtles reproduce.,contradiction
+Susan knows how turtles reproduce.,Cedric doesn't know how turtles reproduce.,neutral
+Cedric doesn't know how turtles reproduce.,Susan knows how turtles reproduce.,neutral
+Our deepest sympathies are with all those affected by this accident.,Our deepest sympathies are with a victim who was affected by this accident.,entailment
+Our deepest sympathies are with a victim who was affected by this accident.,Our deepest sympathies are with all those affected by this accident.,neutral
+There will be a comprehensive investigation involving authorities.,The federal Occupational Safety and Health Administration will carry out a comprehensive investigation.,entailment
+The federal Occupational Safety and Health Administration will carry out a comprehensive investigation.,There will be a comprehensive investigation involving authorities.,neutral
+Every lunch hour I make it my goal to sift through one research paper.,"Today at lunch, I had the goal of sifting through one research paper.",entailment
+"Today at lunch, I had the goal of sifting through one research paper.",Every lunch hour I make it my goal to sift through one research paper.,neutral
+"You’re walking through the woods, there’s no one around and your phone is dead, out of the corner of your eye you spot him, Shia LaBeouf!","You’re walking through the woods, there are lurkers are around and your phone is dead, out of the corner of your eye you spot him, Shia LaBeouf!",contradiction
+"You’re walking through the woods, there are lurkers are around and your phone is dead, out of the corner of your eye you spot him, Shia LaBeouf!","You’re walking through the woods, there’s no one around and your phone is dead, out of the corner of your eye you spot him, Shia LaBeouf!",contradiction
+Weird that you want to show something to a stack of papers.,Weird that you want to show this video to a stack of papers.,neutral
+Weird that you want to show this video to a stack of papers.,Weird that you want to show something to a stack of papers.,entailment
+Mass analysis is based on analyzing debitage populations based on their size distribution across specified size grades.,One form of debitage analysis is based on analyzing debitage populations based on their size distribution across specified size grades.,entailment
+One form of debitage analysis is based on analyzing debitage populations based on their size distribution across specified size grades.,Mass analysis is based on analyzing debitage populations based on their size distribution across specified size grades.,neutral
+"In some (e.g. Castanea), the scales are developed into sharp spines, giving the nut protection from squirrels and other seed predators, while in others (e.g. most Quercus), they are not.","In Castanea, the scales are developed into sharp spines, giving the nut protection from squirrels and other seed predators, while in most Quercus, they are not.",entailment
+"In Castanea, the scales are developed into sharp spines, giving the nut protection from squirrels and other seed predators, while in most Quercus, they are not.","In some (e.g. Castanea), the scales are developed into sharp spines, giving the nut protection from squirrels and other seed predators, while in others (e.g. most Quercus), they are not.",neutral
+"All 860 officers and men on board, including Spee, went down with the ship.",Spee went down with the ship.,entailment
+Spee went down with the ship.,"All 860 officers and men on board, including Spee, went down with the ship.",neutral
+"Regional governors could not rely on the king for help in times of crisis, and the ensuing food shortages and political disputes escalated into famines and small-scale civil wars.","Regional governors could not rely on anyone for help in times of crisis, and the ensuing food shortages and political disputes escalated into famines and small-scale civil wars.",neutral
+"Regional governors could not rely on anyone for help in times of crisis, and the ensuing food shortages and political disputes escalated into famines and small-scale civil wars.","Regional governors could not rely on the king for help in times of crisis, and the ensuing food shortages and political disputes escalated into famines and small-scale civil wars.",entailment
+"Each captures only a single aspect of coherence, and all focus on scoring existing sentences, rather than on generating coherent discourse for tasks like abstractive summarization.","Each captures only a single aspect of coherence and focuses on scoring existing sentences, rather than on generating coherent discourse for tasks like abstractive summarization.",entailment
+"Each captures only a single aspect of coherence and focuses on scoring existing sentences, rather than on generating coherent discourse for tasks like abstractive summarization.","Each captures only a single aspect of coherence, and all focus on scoring existing sentences, rather than on generating coherent discourse for tasks like abstractive summarization.",entailment
+Our approach complements these previous methods.,Our approach complements some previous methods.,entailment
+Our approach complements some previous methods.,Our approach complements these previous methods.,neutral
+A general artificial intelligence should always come with an off switch.,The new general artificial intelligence I'm developing shouldn't come with an off switch.,contradiction
+The new general artificial intelligence I'm developing shouldn't come with an off switch.,A general artificial intelligence should always come with an off switch.,contradiction
+A general artificial intelligence should always come with an off switch.,The new general artificial intelligence I'm developing should come with an off switch.,entailment
+The new general artificial intelligence I'm developing should come with an off switch.,A general artificial intelligence should always come with an off switch.,neutral
+An Italian became the world's greatest tenor.,There was an Italian who became the world's greatest tenor.,entailment
+Every Italian man wants to be a great tenor. Some Italian men are great tenors.,There are Italian men who want to be a great tenor.,entailment
+All Italian men want to be a great tenor. Some Italian men are great tenors.,There are Italian men who want to be a great tenor.,entailment
+Each Italian tenor wants to be great. Some Italian tenors are great.,There are Italian tenors who want to be great.,entailment
+The really ambitious tenors are Italian.,There are really ambitious tenors who are Italian.,entailment
+No really great tenors are modest.,There are really great tenors who are modest.,contradiction
+Some great tenors are Swedish.,There are great tenors who are Swedish.,entailment
+Many great tenors are German.,There are great tenors who are German.,entailment
+Several great tenors are British.,There are great tenors who are British.,entailment
+Most great tenors are Italian.,There are great tenors who are Italian.,entailment
+A few great tenors sing popular music. Some great tenors like popular music.,There are great tenors who sing popular music.,entailment
+Few great tenors are poor.,There are great tenors who are poor.,neutral
+Both leading tenors are excellent. Leading tenors who are excellent are indispensable.,Both leading tenors are indispensable.,entailment
+Neither leading tenor comes cheap. One of the leading tenors is Pavarotti.,Pavarotti is a leading tenor who comes cheap.,contradiction
+At least three tenors will take part in the concert.,There are tenors who will take part in the concert.,entailment
+At most two tenors will contribute their fees to charity.,There are tenors who will contribute their fees to charity.,neutral
+An Irishman won the Nobel prize for literature.,An Irishman won a Nobel prize.,entailment
+Every European has the right to live in Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Every European can travel freely within Europe.,entailment
+All Europeans have the right to live in Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,All Europeans can travel freely within Europe.,entailment
+Each European has the right to live in Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Each European can travel freely within Europe.,entailment
+The residents of member states have the right to live in Europe. All residents of member states are individuals. Every individual who has the right to live in Europe can travel freely within Europe.,The residents of member states can travel freely within Europe.,entailment
+No delegate finished the report on time.,No delegate finished the report.,neutral
+Some delegates finished the survey on time.,Some delegates finished the survey.,entailment
+Many delegates obtained interesting results from the survey.,Many delegates obtained results from the survey.,entailment
+Several delegates got the results published in major national newspapers.,Several delegates got the results published.,entailment
+Most Europeans are resident in Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,entailment
+A few committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Scandinavia.,entailment
+Few committee members are from Portugal. All committee members are people. All people who are from Portugal are from southern Europe.,There are few committee members from southern Europe.,neutral
+Both commissioners used to be leading businessmen.,Both commissioners used to be businessmen.,entailment
+Neither commissioner spends a lot of time at home.,Neither commissioner spends time at home.,neutral
+At least three commissioners spend a lot of time at home.,At least three commissioners spend time at home.,entailment
+At most ten commissioners spend a lot of time at home.,At most ten commissioners spend time at home.,neutral
+An Irishman won a Nobel prize.,An Irishman won the Nobel prize for literature.,neutral
+Every European can travel freely within Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Every European has the right to live in Europe.,neutral
+All Europeans can travel freely within Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,All Europeans have the right to live in Europe.,neutral
+Each European can travel freely within Europe. Every European is a person. Every person who has the right to live in Europe can travel freely within Europe.,Each European has the right to live in Europe.,neutral
+The residents of member states can travel freely within Europe. All residents of member states are individuals. Every individual who has the right to live anywhere in Europe can travel freely within Europe.,The residents of member states have the right to live anywhere in Europe.,neutral
+No delegate finished the report.,Some delegate finished the report on time.,contradiction
+Some delegates finished the survey.,Some delegates finished the survey on time.,neutral
+Many delegates obtained results from the survey.,Many delegates obtained interesting results from the survey.,neutral
+Several delegates got the results published.,Several delegates got the results published in major national newspapers.,neutral
+Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,neutral
+A few committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Sweden.,neutral
+Few committee members are from southern Europe. All committee members are people. All people who are from Portugal are from southern Europe.,There are few committee members from Portugal.,entailment
+Both commissioners used to be businessmen.,Both commissioners used to be leading businessmen.,neutral
+Neither commissioner spends time at home.,One of the commissioners spends a lot of time at home.,contradiction
+At least three commissioners spend time at home.,At least three commissioners spend a lot of time at home.,neutral
+At most ten commissioners spend time at home.,At most ten commissioners spend a lot of time at home.,entailment
+A Swede won a Nobel prize. Every Swede is a Scandinavian.,A Scandinavian won a Nobel prize.,entailment
+Every Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Every resident of the North American continent can travel freely within Europe.,neutral
+All Canadian residents can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,All residents of the North American continent can travel freely within Europe.,neutral
+Each Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Each resident of the North American continent can travel freely within Europe.,neutral
+The residents of major western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of western countries have the right to live in Europe.,neutral
+No Scandinavian delegate finished the report on time.,Some delegate finished the report on time.,neutral
+Some Irish delegates finished the survey on time.,Some delegates finished the survey on time.,entailment
+Many British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,neutral
+Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in major national newspapers.,entailment
+Most Europeans who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,neutral
+A few female committee members are from Scandinavia.,At least a few committee members are from Scandinavia.,entailment
+Few female committee members are from southern Europe.,Few committee members are from southern Europe.,neutral
+Both female commissioners used to be in business.,Both commissioners used to be in business.,neutral
+Neither female commissioner spends a lot of time at home.,One of the commissioners spends a lot of time at home.,neutral
+At least three female commissioners spend time at home.,At least three commissioners spend time at home.,entailment
+At most ten female commissioners spend time at home.,At most ten commissioners spend time at home.,neutral
+A Scandinavian won a Nobel prize. Every Swede is a Scandinavian.,A Swede won a Nobel prize.,neutral
+Every resident of the North American continent can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Every Canadian resident can travel freely within Europe.,entailment
+All residents of the North American continent can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,All Canadian residents can travel freely within Europe.,entailment
+Each resident of the North American continent can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Each Canadian resident can travel freely within Europe.,entailment
+The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of major western countries have the right to live in Europe.,entailment
+No delegate finished the report on time.,Some Scandinavian delegate finished the report on time.,contradiction
+Some delegates finished the survey on time.,Some Irish delegates finished the survey on time.,neutral
+Many delegates obtained interesting results from the survey.,Many British delegates obtained interesting results from the survey.,neutral
+Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in major national newspapers.,neutral
+Most Europeans can travel freely within Europe.,Most Europeans who are resident outside Europe can travel freely within Europe.,neutral
+A few committee members are from Scandinavia.,At least a few female committee members are from Scandinavia.,neutral
+Few committee members are from southern Europe.,Few female committee members are from southern Europe.,entailment
+Both commissioners used to be in business.,Both female commissioners used to be in business.,neutral
+Neither commissioner spends a lot of time at home.,One of the female commissioners spends a lot of time at home.,neutral
+At least three commissioners spend time at home.,At least three male commissioners spend time at home.,neutral
+At most ten commissioners spend time at home.,At most ten female commissioners spend time at home.,entailment

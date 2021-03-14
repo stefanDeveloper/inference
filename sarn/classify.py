@@ -7,9 +7,11 @@ import numpy as np
 from .labels import Label
 
 parser = argparse.ArgumentParser(description="Classify entailment of sequences a and b")
-parser.add_argument("a", type=str)
-parser.add_argument("b", type=str)
-parser.add_argument("--model", type=str, default="facebook/bart-large-mnli")
+parser.add_argument("a")
+parser.add_argument("b")
+parser.add_argument(
+    "--model", default="facebook/bart-large-mnli"
+)  # microsoft/deberta-large-mnli
 parser.add_argument("--print-tokens", action="store_true")
 parser.add_argument("--print-results", action="store_true")
 
