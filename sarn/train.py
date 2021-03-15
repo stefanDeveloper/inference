@@ -19,6 +19,8 @@ parser.add_argument("dataset")
 parser.add_argument("--output-dir")
 parser.add_argument("--log-dir")
 parser.add_argument("--epochs", type=int, default=3)
+parser.add_argument("--train-batch-size", type=int, default=16)
+parser.add_argument("--test-batch-size", type=int, default=64)
 parser.add_argument("--log-frequency", type=int, default=10)
 
 args = parser.parse_args()
@@ -34,8 +36,8 @@ print("Creating training instance")
 training_args = TrainingArguments(
     output_dir=args.output_dir,
     num_train_epochs=args.epochs,
-    per_device_train_batch_size=16,
-    per_device_eval_batch_size=64,
+    per_device_train_batch_size=args.train_batch_size,
+    per_device_eval_batch_size=args.test_batch_size,
     warmup_steps=500,  # number of warmup steps for learning rate scheduler
     weight_decay=0.01,  # strength of weight decay
     logging_dir=args.log_dir,
