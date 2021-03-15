@@ -6,6 +6,7 @@ from transformers import (
     Trainer,
     TrainingArguments,
 )
+from transformers.trainer_utils import get_last_checkpoint
 
 # Base models:
 # facebook/bart-large-mnli
@@ -18,10 +19,12 @@ parser.add_argument("model")
 parser.add_argument("dataset")
 parser.add_argument("--output-dir")
 parser.add_argument("--log-dir")
-parser.add_argument("--epochs", type=int, default=3)
+parser.add_argument("--epochs", type=float, default=3)
 parser.add_argument("--train-batch-size", type=int, default=4) # Google Colab seems to be fine up until 4 (11gb VRAM)
 parser.add_argument("--test-batch-size", type=int, default=2)
 parser.add_argument("--log-frequency", type=int, default=10)
+parser.add_argument("--max-checkpoints", type=int, default=2)
+parser.add_argument("--resume", action="store_true")
 
 args = parser.parse_args()
 
@@ -31,6 +34,11 @@ tokenizer = AutoTokenizer.from_pretrained(args.model)
 
 print("Loading dataset", args.dataset)
 train_dataset, test_dataset = load_training_dataset(args.dataset, tokenizer)
+
+if args.resume:
+    checkpoint = get_last_checkpoint(args.output_dir)
+else:
+    checkpoint = None
 
 print("Creating training instance")
 training_args = TrainingArguments(
@@ -42,6 +50,7 @@ training_args = TrainingArguments(
     weight_decay=0.01,  # strength of weight decay
     logging_dir=args.log_dir,
     logging_steps=args.log_frequency,
+    save_total_limit=args.max_checkpoints,
 )
 trainer = Trainer(
     model=model,
@@ -51,6 +60,6 @@ trainer = Trainer(
 )
 
 print("Starting training")
-trainer.train()
+trainer.train(checkpoint)
 print(trainer.evaluate())
 trainer.save_model()
