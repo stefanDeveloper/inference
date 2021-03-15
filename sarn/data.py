@@ -1,36 +1,16 @@
-from pathlib import Path
 from sklearn.model_selection import train_test_split
-from transformers import DistilBertTokenizerFast
 import torch
+import csv
+from .labels import Label
+
+label_map = {
+    "contradiction": Label.CONTRADICTION.value,
+    "neutral": Label.NEUTRAL.value,
+    "entailment": Label.ENTAILMENT.value,
+}
 
 
-def read_imdb_split(split_dir):
-    split_dir = Path(split_dir)
-    texts = []
-    labels = []
-    for label_dir in ["pos", "neg"]:
-        for text_file in (split_dir / label_dir).iterdir():
-            texts.append(text_file.read_text())
-            labels.append(0 if label_dir is "neg" else 1)
-
-    return texts, labels
-
-
-train_texts, train_labels = read_imdb_split("aclImdb/train")
-test_texts, test_labels = read_imdb_split("aclImdb/test")
-
-train_texts, val_texts, train_labels, val_labels = train_test_split(
-    train_texts, train_labels, test_size=0.2
-)
-
-tokenizer = DistilBertTokenizerFast.from_pretrained("distilbert-base-uncased")
-
-train_encodings = tokenizer(train_texts, truncation=True, padding=True)
-val_encodings = tokenizer(val_texts, truncation=True, padding=True)
-test_encodings = tokenizer(test_texts, truncation=True, padding=True)
-
-
-class IMDbDataset(torch.utils.data.Dataset):
+class Dataset(torch.utils.data.Dataset):
     def __init__(self, encodings, labels):
         self.encodings = encodings
         self.labels = labels
@@ -44,6 +24,40 @@ class IMDbDataset(torch.utils.data.Dataset):
         return len(self.labels)
 
 
-train_dataset = IMDbDataset(train_encodings, train_labels)
-val_dataset = IMDbDataset(val_encodings, val_labels)
-test_dataset = IMDbDataset(test_encodings, test_labels)
+def read_dataset(dataset_path):
+    sequences = []
+    labels = []
+    with open(dataset_path, newline="") as f:
+        reader = csv.reader(f, delimiter=",", quotechar='"')
+        for row in reader:
+            sequences.append((row[0], row[1]))
+            labels.append(label_map[row[2]])
+
+    return sequences, labels
+
+
+def tokenize(texts, tokenizer):
+    return tokenizer(
+        [premise for premise, _ in texts],
+        [hypothesis for _, hypothesis in texts],
+        truncation=True,
+        padding=True,
+    )
+
+
+def load_training_dataset(dataset_path, tokenizer, test_size=0.2):
+    texts, labels = read_dataset(dataset_path)
+    train_texts, test_texts, train_labels, test_labels = train_test_split(
+        texts, labels, test_size=test_size
+    )
+    train_encodings = tokenize(train_texts, tokenizer)
+    test_encodings = tokenize(test_texts, tokenizer)
+    train_dataset = Dataset(train_encodings, train_labels)
+    test_dataset = Dataset(test_encodings, test_labels)
+    return train_dataset, test_dataset
+
+
+def load_evaluation_dataset(dataset_path, tokenizer):
+    texts, labels = read_dataset(dataset_path)
+    encodings = tokenize(texts, tokenizer)
+    return Dataset(encodings, labels)

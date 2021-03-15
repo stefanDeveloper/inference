@@ -1,33 +1,55 @@
+import argparse
+from sarn.data import load_training_dataset
 from transformers import (
     AutoTokenizer,
     AutoModelForSequenceClassification,
     Trainer,
     TrainingArguments,
 )
+import torch
 
-model_name = "microsoft/deberta-large-mnli"
-model = AutoModelForSequenceClassification(model_name)
-tokenizer = AutoTokenizer(model_name)
+# Base models:
+# facebook/bart-large-mnli
+# microsoft/deberta-large-mnli
 
+parser = argparse.ArgumentParser(
+    description="Finetuning of a specified model on the specified dataset"
+)
+parser.add_argument("model")
+parser.add_argument("dataset")
+parser.add_argument("--output-dir")
+parser.add_argument("--log-dir")
+parser.add_argument("--epochs", type=int, default=3)
+parser.add_argument("--log-frequency", type=int, default=10)
+
+args = parser.parse_args()
+
+print("Loading model", args.model)
+model = AutoModelForSequenceClassification.from_pretrained(args.model)
+tokenizer = AutoTokenizer.from_pretrained(args.model)
+
+print("Loading dataset", args.dataset)
+train_dataset, test_dataset = load_training_dataset(args.dataset, tokenizer)
+
+print("Creating training instance")
 training_args = TrainingArguments(
-    output_dir="./results",  # output directory
-    num_train_epochs=3,  # total # of training epochs
-    per_device_train_batch_size=16,  # batch size per device during training
-    per_device_eval_batch_size=64,  # batch size for evaluation
+    output_dir=args.output_dir,
+    num_train_epochs=args.epochs,
+    per_device_train_batch_size=16,
+    per_device_eval_batch_size=64,
     warmup_steps=500,  # number of warmup steps for learning rate scheduler
     weight_decay=0.01,  # strength of weight decay
-    logging_dir="./logs",  # directory for storing logs
-    logging_steps=10,
+    logging_dir=args.log_dir,
+    logging_steps=args.log_frequency,
 )
-
 trainer = Trainer(
-    model=model,  # the instantiated 🤗 Transformers model to be trained
-    args=training_args,  # training arguments, defined above
-    train_dataset=train_dataset,  # training dataset
-    eval_dataset=test_dataset,  # evaluation dataset
+    model=model,
+    args=training_args,
+    train_dataset=train_dataset,
+    eval_dataset=test_dataset,
 )
 
-if __name__ == "__main__":
-    trainer.train()
-    print(trainer.evaluate())
-    trainer.save_model()
+print("Starting training")
+trainer.train()
+print(trainer.evaluate())
+trainer.save_model()
