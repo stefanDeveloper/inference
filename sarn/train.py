@@ -6,7 +6,6 @@ from transformers import (
     Trainer,
     TrainingArguments,
 )
-import torch
 
 # Base models:
 # facebook/bart-large-mnli
