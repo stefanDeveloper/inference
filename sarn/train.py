@@ -25,6 +25,7 @@ parser.add_argument("--test-batch-size", type=int, default=2)
 parser.add_argument("--log-frequency", type=int, default=10)
 parser.add_argument("--max-checkpoints", type=int, default=2)
 parser.add_argument("--resume", action="store_true")
+parser.add_argument("--cpu", action="store_true") # Whether to only train on CPU, not GPU
 
 args = parser.parse_args()
 
@@ -51,6 +52,7 @@ training_args = TrainingArguments(
     logging_dir=args.log_dir,
     logging_steps=args.log_frequency,
     save_total_limit=args.max_checkpoints,
+    no_cuda=args.cpu,
 )
 trainer = Trainer(
     model=model,
