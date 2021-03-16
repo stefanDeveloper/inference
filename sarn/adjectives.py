@@ -48,5 +48,7 @@ def replace_adjectives(text):
         original.append(sent)
     return [" ".join(sents) for sents in results]
 
-for c in replace_adjectives("At least three tenors will take part in the concert. There are tenors who will take part in the concert."):
+sample = "Many delegates obtained interesting results from the survey. Many delegates obtained results from the survey."
+print("Input:", sample)
+for c in replace_adjectives(sample):
     print(c)
