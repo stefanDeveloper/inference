@@ -48,7 +48,8 @@ def replace_adjectives(text):
         original.append(sent)
     return [" ".join(sents) for sents in results]
 
-sample = "Many delegates obtained interesting results from the survey. Many delegates obtained results from the survey."
-print("Input:", sample)
-for c in replace_adjectives(sample):
-    print(c)
+if __name__ == "__main__":
+    sample = "Many delegates obtained interesting results from the survey. Many delegates obtained results from the survey."
+    print("Input:", sample)
+    for c in replace_adjectives(sample):
+        print(c)

@@ -16,7 +16,8 @@ logic_categories = [
     "Non-Monotone"
 ]
 
-# Download from https://www.dropbox.com/s/ju7d95ifb072q9f/diagnostic-full.tsv?dl=1
-df = pd.read_csv("diagnostic-full.tsv", sep="\t")
-df = df[df["Logic"].apply(lambda x: isinstance(x, str) and any(cat in logic_categories for cat in x.split(";")))]
-df[["Premise", "Hypothesis", "Label"]].to_csv("data/superglue.csv", index=False, header=False)
+if __name__ == "__main__":
+    # Download from https://www.dropbox.com/s/ju7d95ifb072q9f/diagnostic-full.tsv?dl=1
+    df = pd.read_csv("diagnostic-full.tsv", sep="\t")
+    df = df[df["Logic"].apply(lambda x: isinstance(x, str) and any(cat in logic_categories for cat in x.split(";")))]
+    df[["Premise", "Hypothesis", "Label"]].to_csv("data/superglue.csv", index=False, header=False)
