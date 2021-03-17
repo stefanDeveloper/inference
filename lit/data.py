@@ -1,9 +1,9 @@
 import pandas
 from lit_nlp.api import types as lit_types
-from lit_nlp.api import dataset
+from lit_nlp.api.dataset import Dataset
 
 
-class Data(dataset):
+class Data(Dataset):
     """Loader for MultiNLI development set."""
 
     NLI_LABELS = ["entailment", "neutral", "contradiction"]
