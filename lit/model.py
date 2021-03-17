@@ -1,19 +1,23 @@
 from lit_nlp.api import types as lit_types
+from lit_nlp.api import model
 from typing import List, Iterable
 
-# TODO Set value correct
-class Model(Model):
-    """Wrapper for a Natural Language Inference model."""
+from transformers import AutoModelForSequenceClassification
 
+
+class Model(model):
     NLI_LABELS = ['entailment', 'neutral', 'contradiction']
 
-    def __init__(self, model_path, **kw):
+    """Wrapper for a Natural Language Inference model."""
+
+    def __init__(self, model_path):
         # Load the model into memory so we're ready for interactive use.
         # TODO Load model
-        self._model = _load_my_model(model_path, **kw)
+        self._model = AutoModelForSequenceClassification.from_pretrained(model_path)
 
     ##
     # LIT API implementations
+    # TODO Fix these imports
     def predict(self, inputs: List[Input]) -> Iterable[Preds]:
         """Predict on a single minibatch of examples."""
         examples = [self._model.convert_dict_input(d) for d in inputs]  # any custom preprocessing
@@ -28,7 +32,8 @@ class Model(Model):
 
     def output_spec(self):
         """Describe the model outputs."""
+        # TODO Import vocab
         return {
             # The 'parent' keyword tells LIT where to look for gold labels when computing metrics.
-            'probas': lit_types.MulticlassPreds(vocab=NLI_LABELS, parent='label'),
+            'probas': lit_types.MulticlassPreds(vocab=NLI_, parent='label'),
         }
