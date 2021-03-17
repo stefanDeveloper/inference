@@ -14,8 +14,6 @@ class Data(Dataset):
         self._examples = [{
             'premise': row['sentence1'],
             'hypothesis': row['sentence2'],
-            'label': row['gold_label'],
-            'genre': row['genre'],
         } for _, row in df.iterrows()]
 
     """Should return a flat dictionary that describes the fields in each example"""
