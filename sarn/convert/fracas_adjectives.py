@@ -1,17 +1,11 @@
 """
 Script for extracting relevant samples from FraCaS
 problem set and converting them to our project's dataset schema.
-Limited to the category "1 GENERALIZED QUANTIFIERS".
+Limited to the category "5.3 Opposites".
 """
 from xml.etree import ElementTree
 import csv
-
-label_map = {
-    "yes": "entailment",
-    "no": "contradiction",
-    "unknown": "neutral",
-    "undef": "neutral",
-}
+from .fracas import label_map
 
 if __name__ == "__main__":
     # Download from https://nlp.stanford.edu/~wcmac/downloads/fracas.xml
@@ -24,8 +18,8 @@ if __name__ == "__main__":
         if node.tag != "problem":
             continue
         id = int(node.attrib["id"])
-        # Category "1 GENERALIZED QUANTIFIERS" ends at id 80
-        if id > 80:
+        # Category "5.3 Opposites" starts at id 204 and ends at id 209
+        if id < 204 or id > 209:
             continue
         label = label_map[node.attrib["fracas_answer"]]
         premises = []
@@ -37,6 +31,6 @@ if __name__ == "__main__":
                 hypothesis = child.text.strip()
         entries.append((" ".join(premises), hypothesis, label))
 
-    with open("data/fracas.csv", "w", newline="") as f:
+    with open("data/fracas_adjectives.csv", "w", newline="") as f:
         writer = csv.writer(f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writer.writerows(entries)

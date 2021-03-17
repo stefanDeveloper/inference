@@ -28,7 +28,9 @@ parser.add_argument("--test-batch-size", type=int, default=16)
 parser.add_argument("--log-frequency", type=int, default=10)
 parser.add_argument("--max-checkpoints", type=int, default=2)
 parser.add_argument("--resume", action="store_true")
-parser.add_argument("--cpu", action="store_true") # Whether to only train on CPU, not GPU
+parser.add_argument(
+    "--cpu", action="store_true"
+)  # Whether to only train on CPU, not GPU
 
 if __name__ == "__main__":
     args = parser.parse_args()
