@@ -15,25 +15,24 @@ def main(_):
 
     args = parser.parse_args()
 
-    # MulitiNLIData implements the Dataset API
-    print("Loading dataset", args.dataset)
-    train_dataset, test_dataset = load_training_dataset(args.dataset, tokenizer)
-
     model_name = args.model
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+    #tokenizer = AutoTokenizer.from_pretrained(model_name)
+    #model = AutoModelForSequenceClassification.from_pretrained(model_name)
 
-    datasets = {
-        'mnli_matched': MultiNLIData('/path/to/dev_matched.tsv'),
-        'mnli_mismatched': MultiNLIData('/path/to/dev_mismatched.tsv'),
-    }
+    print("Loading dataset", args.dataset)
+    #train_dataset, test_dataset = load_training_dataset(args.dataset, tokenizer)
 
-    # NLIModel implements the Model API
-    models = {
-        'model_bert': NLIModel('../path/to/model/foo/files'),
-        'model_deberta': NLIModel('/path/to/model/bar/files'),
-    }
+    #datasets = {
+    #    'mnli_matched': MultiNLIData('/path/to/dev_matched.tsv'),
+    #    'mnli_mismatched': MultiNLIData('/path/to/dev_mismatched.tsv'),
+    #}
 
+    #models = {
+    #    'model_bert': NLIModel('../path/to/model/foo/files'),
+    #    'model_deberta': NLIModel('/path/to/model/bar/files'),
+    #}
+
+    # TODO Load models by parameters
     lit_demo = lit_nlp.dev_server.Server(models, datasets, port=4321)
     return lit_demo.serve()
 

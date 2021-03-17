@@ -1,3 +1,7 @@
+from lit_nlp.api import types as lit_types
+from typing import List, Iterable
+
+# TODO Set value correct
 class Model(Model):
     """Wrapper for a Natural Language Inference model."""
 
@@ -5,6 +9,7 @@ class Model(Model):
 
     def __init__(self, model_path, **kw):
         # Load the model into memory so we're ready for interactive use.
+        # TODO Load model
         self._model = _load_my_model(model_path, **kw)
 
     ##

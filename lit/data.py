@@ -1,4 +1,8 @@
-class MultiNLIData(Dataset):
+import pandas
+from lit_nlp.api import types as lit_types
+
+
+class Data(Dataset):
     """Loader for MultiNLI development set."""
 
     NLI_LABELS = ['entailment', 'neutral', 'contradiction']
@@ -13,6 +17,8 @@ class MultiNLIData(Dataset):
             'label': row['gold_label'],
             'genre': row['genre'],
         } for _, row in df.iterrows()]
+
+    """Should return a flat dictionary that describes the fields in each example"""
 
     def spec(self):
         return {
