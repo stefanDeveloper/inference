@@ -26,7 +26,10 @@ For `--model`, any valid [Huggingface model](https://huggingface.co/transformers
 ```sh
 source .venv/bin/activate
 python -m lit.main \
-  --models "models/deberta-mq/" "./models/bart-mq" \
+  --models "models/deberta-mq" \
+           "./models/bart-mq" \
+           "facebook/bart-large-mnli" \
+           "microsoft/deberta-large-mnli" \
   --datasets "./data/evaluation.csv" "./data/training.csv" \
   --cache_dir=cache_dir
 ```
