@@ -1,17 +1,12 @@
 import numpy as np
 from lit_nlp.api import types as lit_types
 from lit_nlp.api import model as lit_model
-from lit_nlp.api import types
-from lit_nlp.lib import utils
 
-from typing import List, Tuple, Iterable, Iterator, Text
-
-from sarn.labels import Label
-
-JsonDict = types.JsonDict
+from typing import List, Tuple, Text
 
 import torch
 import transformers
+from absl import logging
 
 
 class Model(lit_model.Model):
@@ -20,11 +15,16 @@ class Model(lit_model.Model):
     """Wrapper for a Natural Language Inference model."""
     def __init__(self, model_path):
         # Load the model into memory so we"re ready for interactive use.
-        # TODO Load model
         self._tokenizer = transformers.AutoTokenizer.from_pretrained(model_path)
         self._model = transformers.AutoModelForSequenceClassification.from_pretrained(model_path)
 
-    def predict_minibatch(self, inputs: List[JsonDict], config=None) -> List[JsonDict]:
+    def max_minibatch_size(self, config=None) -> int:
+        # This tells lit_model.Model.predict() how to batch inputs to
+        # predict_minibatch().
+        # Alternately, you can just override predict() and handle batching yourself.
+        return 32
+
+    def predict_minibatch(self, inputs: List[lit_types.JsonDict], config=None) -> List[lit_types.JsonDict]:
         """Run prediction on a batch of inputs.
 
         Args:
@@ -35,22 +35,21 @@ class Model(lit_model.Model):
         Returns:
           list of outputs, following model.output_spec()
         """
-        output: List[JsonDict] = []
-        for input in inputs:
-            encoded = self._tokenizer(input["premise"], input["hypothesis"], return_tensors="pt")
+        output: List[lit_types.JsonDict] = []
+        for line in inputs:
+            encoded = self._tokenizer(line["premise"], line["hypothesis"], return_tensors="pt")
             classification_logits = self._model(**encoded).logits
             results = torch.softmax(classification_logits, dim=1).tolist()[0]
-            output.append({"probas": results})
-        print(f"Predict minibatch {inputs} with {output}")
+            probas = {"probas": results}
+            output.append(probas)
+            logging.debug(f"Predict minibatch {line} with {probas}")
         return output
 
-    # def get_embedding_table(self) -> Tuple[List[Text], np.ndarray]:
-    #     pass
-    #
-    # def fit_transform_with_metadata(self, indexed_inputs: List[JsonDict]):
-    #     # Ignore; only used internally
-    #     super.fit_transform_with_metadata(self, indexed_inputs)
-    #     pass
+    def get_embedding_table(self) -> Tuple[List[Text], np.ndarray]:
+        pass
+
+    def fit_transform_with_metadata(self, indexed_inputs: List[lit_types.JsonDict]):
+        pass
 
     def input_spec(self):
         """Describe the inputs to the model."""
@@ -62,5 +61,7 @@ class Model(lit_model.Model):
     def output_spec(self):
         return {
             # The "parent" keyword tells LIT where to look for gold labels when computing metrics.
+            # Note: "label" is a column in the dataset!
+            # We use MulticlassPreds like in the examples.
             "probas": lit_types.MulticlassPreds(vocab=self.NLI_LABELS, parent='label'),
         }
