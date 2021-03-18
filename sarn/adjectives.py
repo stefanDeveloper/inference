@@ -57,9 +57,9 @@ def replace_adjectives(text):
 
 def replace_adjectives_pair(premise, hypothesis):
     for new_premise in replace_adjectives(premise):
-        yield new_premise, hypothesis
+        yield new_premise, hypothesis, "unknown"
     for new_hypothesis in replace_adjectives(hypothesis):
-        yield premise, new_hypothesis
+        yield premise, new_hypothesis, "unknown"
 
 
 if __name__ == "__main__":
