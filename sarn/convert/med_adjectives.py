@@ -16,6 +16,7 @@ if __name__ == "__main__":
     for _, row in df.iterrows():
         for output in replace_adjectives_pair(row["sentence1"], row["sentence2"]):
             results.append(output)
+    # We are limiting the amount of rows as we still have to annotate them by hand
     limit = 1200
     samples = random.sample(results, limit)
     with open("data/med_adjectives_1.csv", "w", newline="") as f:
