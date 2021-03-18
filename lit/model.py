@@ -40,7 +40,7 @@ class Model(lit_model.Model):
             encoded = self._tokenizer(input["premise"], input["hypothesis"], return_tensors="pt")
             classification_logits = self._model(**encoded).logits
             results = torch.softmax(classification_logits, dim=1).tolist()[0]
-            output.append({"probas": str.lower(Label(np.argmax(results)).name)})
+            output.append({"probas": results})
         print(f"Predict minibatch {inputs} with {output}")
         return output
 
@@ -62,5 +62,5 @@ class Model(lit_model.Model):
     def output_spec(self):
         return {
             # The "parent" keyword tells LIT where to look for gold labels when computing metrics.
-            "probas": lit_types.CategoryLabel(vocab=self.NLI_LABELS),
+            "probas": lit_types.MulticlassPreds(vocab=self.NLI_LABELS, parent='label'),
         }
