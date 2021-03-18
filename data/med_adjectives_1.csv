@@ -262,42 +262,42 @@ We don't have enough information yet to make a decision.,We don't have enough un
 Very many campers have ever had a sunburn or caught a cold.,Very few campers have caught a cold.,neutral
 I can't buy a bike.,I can't buy a blue little bike.,entailment
 A tsunami hit the north-eastern coast of Hokkaido.,A small tsunami hit the north-eastern coast of Hokkaido.,neutral
-Sida does not take any worn decisions on support to projects in the baltic states.,Sida does not take any new decisions on economic support to projects in the baltic states.,unknown
-A trivial problem doesn't require long contemplation.,A trivial problem doesn't require forgetful review.,unknown
-Today isn't my lucky day!,Halloween isn't my unlucky day!,unknown
-They don't have enough ground space to camp.,They don't have enough dirty ground space to camp.,unknown
-Dogs have all the good qualities of people without at the same time possessing their weaknesses.,Dogs and all pets have all the evil qualities of people without at the same time possessing their weaknesses.,unknown
-It's only a slight cold.,It's only a much head cold.,unknown
-John saw no little student.,John saw no student.,unknown
-A doe is a female deer.,A forest doe is a male deer.,unknown
-Few aliens ate at any restaurants.,Many aliens ate at any Mexican restaurants.,unknown
-I can't speak Japanese.,I can't speak Japanese like a strange speaker.,unknown
-This hospital has a lot of worn equipment.,This office has a lot of new desks.,unknown
-Very many children decided on the cotton candy.,Very few children chose mint chocolates or decided on the cotton candy.,unknown
-A good tree can't bear good tropical fruits.,A good tree can't bear bad fruits.,unknown
-She didn't like city life.,She didn't like city idle life.,unknown
-We don't have enough information yet to make a decision.,We don't have enough insubstantial information yet to make a decision.,unknown
-No wedding would be complete without a fight.,No wedding would be uncomplete without a fight with a partner.,unknown
-I have no more ideas.,I have no more worsened ideas anymore.,unknown
-Less than five children chose mint chocolates or decided on the cotton candy.,More more_than than five children decided on the cotton candy.,unknown
-Tom isn't a bad coach for his team players.,Tom isn't a good coach.,unknown
-You're no longer much kids.,You're no longer children.,unknown
-Winners don't use drugs.,Winners don't use any hollow drugs.,unknown
-I haven't seen bill for a short time.,I haven't seen uncle bill for a long time.,unknown
-"If school wasn't obligatory, I would stop going there.","If boring school wasn't optional, I would stop going there.",unknown
-He believed that blacks could win their fight for inadequate rights without violence.,He believed that blacks could win their fight for equal rights without widespread violence.,unknown
-A little man stole my purse.,A man stole my purse.,unknown
-I don't want to make old friends distracting me from studying!,I don't want to make new friends!,unknown
-Few aliens read books.,Many aliens read sci-fi novels.,unknown
-That girl can't ride a large bicycle.,That girl can't ride a bicycle.,unknown
-Fewer than five campers have ever had a sunburn or caught a cold.,More than five campers have caught a cold.,unknown
-"If you heard her speak English, you would take her for an American.","If you heard her speak English, you would take her for a foreign American.",unknown
-Every alien who did not use any coins is hairy.,Every alien who did not use quarters is hairless.,unknown
-Few linguists entered the race early.,Many linguists entered the race.,unknown
-I have no soiled clothes to go to the party.,I have no clothes to go to the party.,unknown
-You're no shorter babies.,You're no longer children.,unknown
-I have no lesser ideas.,I have no more brilliant ideas.,unknown
-That should be no problem.,That should be no small problem.,unknown
+Sida does not take any worn decisions on support to projects in the baltic states.,Sida does not take any new decisions on economic support to projects in the baltic states.,neutral
+A trivial problem doesn't require long contemplation.,A trivial problem doesn't require forgetful review.,neutral
+Today isn't my lucky day!,Halloween isn't my unlucky day!,neutral
+They don't have enough ground space to camp.,They don't have enough dirty ground space to camp.,entailment
+Dogs have all the good qualities of people without at the same time possessing their weaknesses.,Dogs and all pets have all the evil qualities of people without at the same time possessing their weaknesses.,contradiction
+It's only a slight cold.,It's only a much head cold.,contradiction
+John saw no little student.,John saw no student.,neutral
+A doe is a female deer.,A forest doe is a male deer.,contradiction
+Few aliens ate at any restaurants.,Many aliens ate at any Mexican restaurants.,contradiction
+I can't speak Japanese.,I can't speak Japanese like a strange speaker.,entailment
+This hospital has a lot of worn equipment.,This office has a lot of new desks.,neutral
+Very many children decided on the cotton candy.,Very few children chose mint chocolates or decided on the cotton candy.,contradiction
+A good tree can't bear good tropical fruits.,A good tree can't bear bad fruits.,neutral
+She didn't like city life.,She didn't like city idle life.,entailment
+We don't have enough information yet to make a decision.,We don't have enough insubstantial information yet to make a decision.,neutral
+No wedding would be complete without a fight.,No wedding would be uncomplete without a fight with a partner.,contradiction
+I have no more ideas.,I have no more worsened ideas anymore.,entailment
+Less than five children chose mint chocolates or decided on the cotton candy.,More more_than than five children decided on the cotton candy.,contradiction
+Tom isn't a bad coach for his team players.,Tom isn't a good coach.,contradiction
+You're no longer much kids.,You're no longer children.,neutral
+Winners don't use drugs.,Winners don't use any hollow drugs.,entailment
+I haven't seen bill for a short time.,I haven't seen uncle bill for a long time.,contradiction
+"If school wasn't obligatory, I would stop going there.","If boring school wasn't optional, I would stop going there.",contradiction
+He believed that blacks could win their fight for inadequate rights without violence.,He believed that blacks could win their fight for equal rights without widespread violence.,contradiction
+A little man stole my purse.,A man stole my purse.,entailment
+I don't want to make old friends distracting me from studying!,I don't want to make new friends!,neutral
+Few aliens read books.,Many aliens read sci-fi novels.,contradiction
+That girl can't ride a large bicycle.,That girl can't ride a bicycle.,neutral
+Fewer than five campers have ever had a sunburn or caught a cold.,More than five campers have caught a cold.,contradiction
+"If you heard her speak English, you would take her for an American.","If you heard her speak English, you would take her for a foreign American.",neutral
+Every alien who did not use any coins is hairy.,Every alien who did not use quarters is hairless.,contradiction
+Few linguists entered the race early.,Many linguists entered the race.,neutral
+I have no soiled clothes to go to the party.,I have no clothes to go to the party.,neutral
+You're no shorter babies.,You're no longer children.,neutral
+I have no lesser ideas.,I have no more brilliant ideas.,neutral
+That should be no problem.,That should be no small problem.,entailment
 I don't have a natural knife.,I don't have a knife.,unknown
 Beauty is but skin deep.,Beauty is but nonhuman skin deep.,unknown
 Many aliens played with any toy cars.,Few aliens played with any toys.,unknown
