@@ -6,8 +6,6 @@ from typing import List, Tuple, Text
 
 import torch
 import transformers
-from absl import logging
-
 
 class Model(lit_model.Model):
     NLI_LABELS = ["contradiction", "neutral", "entailment"]
@@ -35,15 +33,15 @@ class Model(lit_model.Model):
         Returns:
           list of outputs, following model.output_spec()
         """
-        output: List[lit_types.JsonDict] = []
-        for line in inputs:
-            encoded = self._tokenizer(line["premise"], line["hypothesis"], return_tensors="pt")
-            classification_logits = self._model(**encoded).logits
-            results = torch.softmax(classification_logits, dim=1).tolist()[0]
-            probas = {"probas": results}
-            output.append(probas)
-            logging.debug(f"Predict minibatch {line} with {probas}")
-        return output
+
+        premises = [line["premise"] for line in inputs]
+        hypotheses = [line["hypothesis"] for line in inputs]
+
+        encoded = self._tokenizer(premises, hypotheses, return_tensors="pt", truncation=True, padding=True)
+        classification_logits = self._model(**encoded).logits
+        results = torch.softmax(classification_logits, dim=1).tolist()
+
+        return [{"probas": probas} for probas in results]
 
     def get_embedding_table(self) -> Tuple[List[Text], np.ndarray]:
         pass
