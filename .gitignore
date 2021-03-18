@@ -1,6 +1,8 @@
 .vscode/
 models/
 logs/
+.idea/
+cache_dir/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
