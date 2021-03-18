@@ -6,6 +6,8 @@ from lit_nlp.lib import utils
 
 from typing import List, Tuple, Iterable, Iterator, Text
 
+from sarn.labels import Label
+
 JsonDict = types.JsonDict
 
 import torch
@@ -13,11 +15,11 @@ import transformers
 
 
 class Model(lit_model.Model):
-    NLI_LABELS = ['entailment', 'neutral', 'contradiction']
+    NLI_LABELS = ["entailment", "neutral", "contradiction"]
 
     """Wrapper for a Natural Language Inference model."""
     def __init__(self, model_path):
-        # Load the model into memory so we're ready for interactive use.
+        # Load the model into memory so we"re ready for interactive use.
         # TODO Load model
         self._tokenizer = transformers.AutoTokenizer.from_pretrained(model_path)
         self._model = transformers.AutoModelForSequenceClassification.from_pretrained(model_path)
@@ -33,11 +35,15 @@ class Model(lit_model.Model):
         Returns:
           list of outputs, following model.output_spec()
         """
-
-        print(type(inputs))
-        print(inputs)
-
-        pass
+        print(f"Predict minibatch with {len(inputs)}")
+        output = List[JsonDict]
+        for input in inputs:
+            encoded = self._tokenizer(input["premise"], input["hypothesis"], return_tensors="pt")
+            classification_logits = self._model(**encoded).logits
+            results = torch.softmax(classification_logits, dim=1).tolist()[0]
+            #Label(np.argmax(results)).name
+            #output.append({"probas": })
+        return output
 
     # def get_embedding_table(self) -> Tuple[List[Text], np.ndarray]:
     #     pass
@@ -50,12 +56,12 @@ class Model(lit_model.Model):
     def input_spec(self):
         """Describe the inputs to the model."""
         return {
-            'premise': lit_types.TextSegment(),
-            'hypothesis': lit_types.TextSegment(),
+            "premise": lit_types.TextSegment(),
+            "hypothesis": lit_types.TextSegment(),
         }
 
     def output_spec(self):
         return {
-            # The 'parent' keyword tells LIT where to look for gold labels when computing metrics.
-            'probas': lit_types.MulticlassPreds(vocab=self.NLI_LABELS, parent='label'),
+            # The "parent" keyword tells LIT where to look for gold labels when computing metrics.
+            "probas": lit_types.MulticlassPreds(vocab=self.NLI_LABELS, parent="label"),
         }
