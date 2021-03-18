@@ -6,7 +6,7 @@ from lit_nlp.api.dataset import Dataset
 class Data(Dataset):
     """Loader for MultiNLI development set."""
 
-    NLI_LABELS = ["entailment", "neutral", "contradiction"]
+    NLI_LABELS = ["contradiction", "neutral", "entailment"]
 
     def __init__(self, path):
 

@@ -10,7 +10,7 @@ from absl import logging
 
 
 class Model(lit_model.Model):
-    NLI_LABELS = ["entailment", "neutral", "contradiction"]
+    NLI_LABELS = ["contradiction", "neutral", "entailment"]
 
     """Wrapper for a Natural Language Inference model."""
     def __init__(self, model_path):
