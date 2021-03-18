@@ -35,14 +35,13 @@ class Model(lit_model.Model):
         Returns:
           list of outputs, following model.output_spec()
         """
-        print(f"Predict minibatch with {len(inputs)}")
-        output = List[JsonDict]
+        output: List[JsonDict] = []
         for input in inputs:
             encoded = self._tokenizer(input["premise"], input["hypothesis"], return_tensors="pt")
             classification_logits = self._model(**encoded).logits
             results = torch.softmax(classification_logits, dim=1).tolist()[0]
-            #Label(np.argmax(results)).name
-            #output.append({"probas": })
+            output.append({"probas": str.lower(Label(np.argmax(results)).name)})
+        print(f"Predict minibatch {inputs} with {output}")
         return output
 
     # def get_embedding_table(self) -> Tuple[List[Text], np.ndarray]:
@@ -63,5 +62,5 @@ class Model(lit_model.Model):
     def output_spec(self):
         return {
             # The "parent" keyword tells LIT where to look for gold labels when computing metrics.
-            "probas": lit_types.MulticlassPreds(vocab=self.NLI_LABELS, parent="label"),
+            "probas": lit_types.CategoryLabel(vocab=self.NLI_LABELS),
         }
