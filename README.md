@@ -15,7 +15,7 @@ pip install -r requirements.txt
 source .venv/bin/activate
 # Finetuning
 python -m sarn.train --model facebook/bart-large-mnli --output-dir models/mybart --log-dir logs/mybart data/training.csv
-# Inference of two sequences
+# Inference of two sequences (forwards)
 python -m sarn.classify --model models/mybart "All dogs jumped over the fence." "Some small dogs jumped over the fence."
 ```
 
