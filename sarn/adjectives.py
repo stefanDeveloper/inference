@@ -78,11 +78,11 @@ def replace_adjectives(premise, hypothesis):
     for adj in p_candidates:
         new_premise = replace_adjective(p_tags, adj)
         if new_premise:
-            yield new_premise, hypothesis, "unknown"
+            yield new_premise, hypothesis
     for adj in h_candidates:
         new_hypothesis = replace_adjective(h_tags, adj)
         if new_hypothesis:
-            yield premise, new_hypothesis, "unknown"
+            yield premise, new_hypothesis
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 Script for replacing adjectives in the MED dataset with their opposites.
 Only one adjective at a time is replaced, so there are many resulting candidates
 for one input sentence.
-Output doesn't include labels, the data has to be annotated by hand afterwards.
+Output doesn't include correct labels, the data has to be annotated by hand afterwards.
 """
 import csv
 import random
@@ -14,8 +14,8 @@ if __name__ == "__main__":
     df = pd.read_csv("MED.tsv", sep="\t")
     results = []
     for _, row in df.iterrows():
-        for output in replace_adjectives(row["sentence1"], row["sentence2"]):
-            results.append(output)
+        for p, h in replace_adjectives(row["sentence1"], row["sentence2"]):
+            results.append((p, h, row["gold_label"]))
     # We are limiting the amount of rows as we still have to annotate them by hand
     limit = 1200
     samples = random.sample(results, limit)
