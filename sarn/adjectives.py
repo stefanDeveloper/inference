@@ -43,9 +43,7 @@ def replace_adjective(sents_tags, adj):
 
     sents = []
     for tags in sents_tags:
-        tokens = [opposite if pair == adj else pair[0] for pair in tags]
-        if tokens:
-            tokens[0] = tokens[0].capitalize()
+        tokens = ["**" + opposite + "**" if pair == adj else pair[0] for pair in tags]
         sents.append(detokenizer.detokenize(tokens))
     return " ".join(sents)
 
