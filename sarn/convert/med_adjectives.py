@@ -15,7 +15,7 @@ if __name__ == "__main__":
     results = []
     for _, row in df.iterrows():
         for p, h in replace_adjectives(row["sentence1"], row["sentence2"]):
-            results.append((p, h, row["gold_label"]))
+            results.append((p, h, "", row["gold_label"]))
     # We are limiting the amount of rows as we still have to annotate them by hand
     limit = 1200
     samples = random.sample(results, limit)

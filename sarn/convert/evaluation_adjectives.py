@@ -15,4 +15,4 @@ if __name__ == "__main__":
         writer = csv.writer(f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for row, label in zip(sequences, labels):
             for p, h in replace_adjectives(row[0], row[1]):
-                writer.writerow((p, h, Label(label).name.lower()))
+                writer.writerow((p, h, "", Label(label).name.lower()))
