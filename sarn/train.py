@@ -19,7 +19,8 @@ parser.add_argument("model")
 parser.add_argument("dataset")
 parser.add_argument("--output-dir")
 parser.add_argument("--log-dir")
-parser.add_argument("--epochs", type=float, default=3)
+# More than 1 epochs lead to overfitting in our experiments
+parser.add_argument("--epochs", type=float, default=1)
 # Google Colab seems to be fine up until a batch size of 4 for the
 # Kepler GPUs (11gb VRAM) and until 10 for the Tesla GPUs (16gb VRAM).
 # If you're training on CPU and have _lots_ of RAM, use a higher value (e.g., 64).
