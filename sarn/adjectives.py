@@ -18,6 +18,7 @@ def opposite_adjectives(word):
     antonyms = [a for s in synsets if s.antonym is not None for a in s.antonym]
     return {syn for a in antonyms for syn in a.synonyms}
 
+
 def opposite_adjective(word):
     synsets = wordnet.synsets(word, pos=ADJ)
     antonyms = [a for s in synsets if s.antonym is not None for a in s.antonym]
@@ -34,11 +35,15 @@ def replace_adjective(sents_tags, adj):
 
     if tag == ADJ_CMP:
         opposite = (
-            comparative(opposite) if nltk.pos_tag([opposite])[0][1] != ADJ_CMP else opposite
+            comparative(opposite)
+            if nltk.pos_tag([opposite])[0][1] != ADJ_CMP
+            else opposite
         )
     elif tag == ADJ_SUP:
         opposite = (
-            superlative(opposite) if nltk.pos_tag([opposite])[0][1] != ADJ_SUP else opposite
+            superlative(opposite)
+            if nltk.pos_tag([opposite])[0][1] != ADJ_SUP
+            else opposite
         )
 
     sents = []
@@ -71,8 +76,8 @@ def find_adjectives_text(text):
 def replace_adjectives(premise, hypothesis):
     p_tags, p_candidates = find_adjectives_text(premise)
     h_tags, h_candidates = find_adjectives_text(hypothesis)
-    p_candidates = { adj for adj in p_candidates if any(adj in tags for tags in h_tags) }
-    h_candidates = { adj for adj in h_candidates if any(adj in tags for tags in p_tags) }
+    p_candidates = {adj for adj in p_candidates if any(adj in tags for tags in h_tags)}
+    h_candidates = {adj for adj in h_candidates if any(adj in tags for tags in p_tags)}
     for adj in p_candidates:
         new_premise = replace_adjective(p_tags, adj)
         if new_premise:
@@ -84,7 +89,10 @@ def replace_adjectives(premise, hypothesis):
 
 
 if __name__ == "__main__":
-    a, b = "Many delegates obtained interesting results from the survey.", "Many delegates obtained results from the survey."
+    a, b = (
+        "Many delegates obtained interesting results from the survey.",
+        "Many delegates obtained results from the survey.",
+    )
     print("Input:", a, b)
     for row in replace_adjectives(a, b):
         print(row)

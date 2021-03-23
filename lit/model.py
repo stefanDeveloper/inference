@@ -7,14 +7,18 @@ from typing import List, Tuple, Text
 import torch
 import transformers
 
+
 class Model(lit_model.Model):
     NLI_LABELS = ["contradiction", "neutral", "entailment"]
 
     """Wrapper for a Natural Language Inference model."""
+
     def __init__(self, model_path):
         # Load the model into memory so we"re ready for interactive use.
         self._tokenizer = transformers.AutoTokenizer.from_pretrained(model_path)
-        self._model = transformers.AutoModelForSequenceClassification.from_pretrained(model_path)
+        self._model = transformers.AutoModelForSequenceClassification.from_pretrained(
+            model_path
+        )
 
     def max_minibatch_size(self, config=None) -> int:
         # This tells lit_model.Model.predict() how to batch inputs to
@@ -22,7 +26,9 @@ class Model(lit_model.Model):
         # Alternately, you can just override predict() and handle batching yourself.
         return 32
 
-    def predict_minibatch(self, inputs: List[lit_types.JsonDict], config=None) -> List[lit_types.JsonDict]:
+    def predict_minibatch(
+        self, inputs: List[lit_types.JsonDict], config=None
+    ) -> List[lit_types.JsonDict]:
         """Run prediction on a batch of inputs.
 
         Args:
@@ -37,7 +43,9 @@ class Model(lit_model.Model):
         premises = [line["premise"] for line in inputs]
         hypotheses = [line["hypothesis"] for line in inputs]
 
-        encoded = self._tokenizer(premises, hypotheses, return_tensors="pt", truncation=True, padding=True)
+        encoded = self._tokenizer(
+            premises, hypotheses, return_tensors="pt", truncation=True, padding=True
+        )
         classification_logits = self._model(**encoded).logits
         results = torch.softmax(classification_logits, dim=1).tolist()
 
@@ -61,5 +69,5 @@ class Model(lit_model.Model):
             # The "parent" keyword tells LIT where to look for gold labels when computing metrics.
             # Note: "label" is a column in the dataset!
             # We use MulticlassPreds like in the examples.
-            "probas": lit_types.MulticlassPreds(vocab=self.NLI_LABELS, parent='label'),
+            "probas": lit_types.MulticlassPreds(vocab=self.NLI_LABELS, parent="label"),
         }

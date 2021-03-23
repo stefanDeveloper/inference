@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # Split into two so two people can label them in parallel without conflicts
     with open("data/med_adjectives_1.csv", "w", newline="") as f:
         writer = csv.writer(f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        writer.writerows(samples[:limit//2])
+        writer.writerows(samples[: limit // 2])
     with open("data/med_adjectives_2.csv", "w", newline="") as f:
         writer = csv.writer(f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        writer.writerows(samples[limit//2:])
+        writer.writerows(samples[limit // 2 :])

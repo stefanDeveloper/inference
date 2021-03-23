@@ -11,13 +11,18 @@ class Data(Dataset):
     def __init__(self, path):
 
         # Read the eval set from a .tsv file as distributed with the GLUE benchmark.
-        df = pandas.read_csv(path, header=None, names=["premise", "hypothesis", "label"], sep=",")
+        df = pandas.read_csv(
+            path, header=None, names=["premise", "hypothesis", "label"], sep=","
+        )
         # Store as a list of dicts, conforming to self.spec()
-        self._examples = [{
-            "premise": row["premise"],
-            "hypothesis": row["hypothesis"],
-            "label": row["label"],
-        } for _, row in df.iterrows()]
+        self._examples = [
+            {
+                "premise": row["premise"],
+                "hypothesis": row["hypothesis"],
+                "label": row["label"],
+            }
+            for _, row in df.iterrows()
+        ]
 
     """Should return a flat dictionary that describes the fields in each example"""
 

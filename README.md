@@ -1,4 +1,5 @@
 # inference
+
 Quantifiers and monotonicity in reasoning tasks
 
 ## Setup
@@ -21,7 +22,7 @@ python -m sarn.classify --model models/bart-mq "All dogs jumped over the fence."
 python -m sarn.roc models/bart-mq data/evaluation.csv
 ```
 
-For `--model`, any valid [Huggingface model](https://huggingface.co/transformers/pretrained_models.html) (local or remote) can be specified that has been [finetuned for sequence classification](https://huggingface.co/models?pipeline_tag=text-classification), e.g., [`facebook/bart-large-mnli`](https://huggingface.co/facebook/bart-large-mnli), [`microsoft/deberta-large-mnli`](https://huggingface.co/microsoft/deberta-large-mnli) or a local path like `models/bart-mq`. 
+For `--model`, any valid [Huggingface model](https://huggingface.co/transformers/pretrained_models.html) (local or remote) can be specified that has been [finetuned for sequence classification](https://huggingface.co/models?pipeline_tag=text-classification), e.g., [`facebook/bart-large-mnli`](https://huggingface.co/facebook/bart-large-mnli), [`microsoft/deberta-large-mnli`](https://huggingface.co/microsoft/deberta-large-mnli) or a local path like `models/bart-mq`.
 
 ## Usage - LIT
 
@@ -47,7 +48,7 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 
 ### Statistics
 
-|     |     |
-| --- | --- |
+| BART                                                               | DeBERTa                                                                |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-csv.svg) | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-csv.svg) |
-| ![](diagrams/roc_models-bart-mq_data-evaluation-csv.svg) | ![](diagrams/roc_models-deberta-mq_data-evaluation-csv.svg) |
+| ![](diagrams/roc_models-bart-mq_data-evaluation-csv.svg)           | ![](diagrams/roc_models-deberta-mq_data-evaluation-csv.svg)            |

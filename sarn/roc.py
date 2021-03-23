@@ -11,9 +11,11 @@ import matplotlib.pyplot as plt
 from .data import load_evaluation_dataset, tokenize
 from .labels import Label
 
+
 def get_valid_filename(s):
     s = str(s).strip().replace(" ", "-")
     return re.sub(r"(?u)[^-\w]", "-", s)
+
 
 parser = argparse.ArgumentParser(
     description="Finetuning of a specified model on the specified dataset"
@@ -34,27 +36,32 @@ if __name__ == "__main__":
     for i, batch in enumerate(dataloader):
         classification_logits = model(**batch).logits
         probas += torch.softmax(classification_logits, dim=1).tolist()
-        if (i+1) % 10 == 0:
-            print("Batch", i+1, "of", batch_cnt)
+        if (i + 1) % 10 == 0:
+            print("Batch", i + 1, "of", batch_cnt)
     probas = np.array(probas)
 
     plt.title("Receiver Operating Characteristic\n" + args.model + ", " + args.dataset)
 
-    cont = probas[:,Label.CONTRADICTION.value]
-    fpr, tpr, thresholds = metrics.roc_curve(dataset.labels, cont, pos_label=Label.CONTRADICTION.value)
+    cont = probas[:, Label.CONTRADICTION.value]
+    fpr, tpr, thresholds = metrics.roc_curve(
+        dataset.labels, cont, pos_label=Label.CONTRADICTION.value
+    )
     roc_auc = metrics.auc(fpr, tpr)
     plt.plot(fpr, tpr, "r", label=f"Contradiction (AUC: {roc_auc:0.2f})")
 
-    neut = probas[:,Label.NEUTRAL.value]
-    fpr, tpr, thresholds = metrics.roc_curve(dataset.labels, neut, pos_label=Label.NEUTRAL.value)
+    neut = probas[:, Label.NEUTRAL.value]
+    fpr, tpr, thresholds = metrics.roc_curve(
+        dataset.labels, neut, pos_label=Label.NEUTRAL.value
+    )
     roc_auc = metrics.auc(fpr, tpr)
     plt.plot(fpr, tpr, "g", label=f"Neutral (AUC: {roc_auc:0.2f})")
 
-    ent = probas[:,Label.ENTAILMENT.value]
-    fpr, tpr, thresholds = metrics.roc_curve(dataset.labels, ent, pos_label=Label.ENTAILMENT.value)
+    ent = probas[:, Label.ENTAILMENT.value]
+    fpr, tpr, thresholds = metrics.roc_curve(
+        dataset.labels, ent, pos_label=Label.ENTAILMENT.value
+    )
     roc_auc = metrics.auc(fpr, tpr)
     plt.plot(fpr, tpr, "b", label=f"Entailment (AUC: {roc_auc:0.2f})")
-
 
     plt.legend(loc="lower right")
     plt.plot([0, 1], [0, 1], "k--")
