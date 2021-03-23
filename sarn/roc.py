@@ -72,3 +72,7 @@ if __name__ == "__main__":
     base_name = get_valid_filename(args.model) + "_" + get_valid_filename(args.dataset)
     plt.savefig(f"diagrams/roc_{base_name}.pdf")
     plt.savefig(f"diagrams/roc_{base_name}.svg")
+
+    print("The diagram has been saved as PDF and SVG:")
+    print(f"diagrams/roc_{base_name}.pdf")
+    print(f"diagrams/roc_{base_name}.svg")
