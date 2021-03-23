@@ -44,3 +44,10 @@ python -m lit.main \
 # export COLI_USER=<your name>
 scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/models .
 ```
+
+### Statistics
+
+|     |     |
+| --- | --- |
+| ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-csv.svg) | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-csv.svg) |
+| ![](diagrams/roc_models-bart-mq_data-evaluation-csv.svg) | ![](diagrams/roc_models-deberta-mq_data-evaluation-csv.svg) |
