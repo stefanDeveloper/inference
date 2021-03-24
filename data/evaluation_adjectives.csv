@@ -70,34 +70,34 @@ Both leading tenors are excellent. Leading tenors who are excellent are indispen
 Many delegates obtained interesting results from the survey.,**few** delegates obtained results from the survey.,,entailment
 **fewest** Europeans are resident in Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,,entailment
 Most Europeans are resident in Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,**fewest** Europeans can travel freely within Europe.,,entailment
-A **many** committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Scandinavia.,,entailment
-A few committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a **many** committee members are from Scandinavia.,,entailment
-Few committee members are from Portugal. All committee members are people. All people who are from Portugal are from **northern** Europe.,There are few committee members from southern Europe.,,neutral
-Few committee members are from Portugal. All committee members are people. All people who are from Portugal are from southern Europe.,There are few committee members from **northern** Europe.,,neutral
-At **most** three commissioners spend a lot of time at home.,At least three commissioners spend time at home.,,entailment
-At least three commissioners spend a lot of time at home.,At **most** three commissioners spend time at home.,,entailment
-At **fewest** ten commissioners spend a lot of time at home.,At most ten commissioners spend time at home.,,neutral
-At most ten commissioners spend a lot of time at home.,At **fewest** ten commissioners spend time at home.,,neutral
-**few** delegates obtained results from the survey.,Many delegates obtained interesting results from the survey.,,neutral
-Many delegates obtained results from the survey.,**few** delegates obtained interesting results from the survey.,,neutral
-**fewest** Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,,neutral
-Most Europeans can travel freely within Europe. All Europeans are people. All people who are **nonresident** in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,,neutral
-Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,**fewest** Europeans are resident in Europe.,,neutral
-Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are **nonresident** in Europe.,,neutral
-A **many** committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Sweden.,,neutral
-A few committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a **many** committee members are from Sweden.,,neutral
-At **most** three commissioners spend time at home.,At least three commissioners spend a lot of time at home.,,neutral
-At least three commissioners spend time at home.,At **most** three commissioners spend a lot of time at home.,,neutral
-At **fewest** ten commissioners spend time at home.,At most ten commissioners spend a lot of time at home.,,entailment
-At most ten commissioners spend time at home.,At **fewest** ten commissioners spend a lot of time at home.,,entailment
-Every Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the **south** American continent.,Every resident of the North American continent can travel freely within Europe.,,neutral
-Every Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Every resident of the **south** American continent can travel freely within Europe.,,neutral
-All Canadian residents can travel freely within Europe. Every Canadian resident is a resident of the **south** American continent.,All residents of the North American continent can travel freely within Europe.,,neutral
-All Canadian residents can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,All residents of the **south** American continent can travel freely within Europe.,,neutral
-Each Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the **south** American continent.,Each resident of the North American continent can travel freely within Europe.,,neutral
-Each Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Each resident of the **south** American continent can travel freely within Europe.,,neutral
-The residents of major **eastern** countries can travel freely within Europe. All residents of major **eastern** countries are residents of **eastern** countries.,The residents of western countries have the right to live in Europe.,,neutral
-The residents of major western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of **eastern** countries have the right to live in Europe.,,neutral
+A **many** committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Scandinavia.,entailment,entailment
+A few committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a **many** committee members are from Scandinavia.,neutral,entailment
+Few committee members are from Portugal. All committee members are people. All people who are from Portugal are from **northern** Europe.,There are few committee members from southern Europe.,neutral,neutral
+Few committee members are from Portugal. All committee members are people. All people who are from Portugal are from southern Europe.,There are few committee members from **northern** Europe.,neutral,neutral
+At **most** three commissioners spend a lot of time at home.,At least three commissioners spend time at home.,contradiction,entailment
+At least three commissioners spend a lot of time at home.,At **most** three commissioners spend time at home.,contradiction,entailment
+At **fewest** ten commissioners spend a lot of time at home.,At most ten commissioners spend time at home.,contradiction,neutral
+At most ten commissioners spend a lot of time at home.,At **fewest** ten commissioners spend time at home.,contradiction,neutral
+**few** delegates obtained results from the survey.,Many delegates obtained interesting results from the survey.,contradiction,neutral
+Many delegates obtained results from the survey.,**few** delegates obtained interesting results from the survey.,neutral,neutral
+**fewest** Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,neutral,neutral
+Most Europeans can travel freely within Europe. All Europeans are people. All people who are **nonresident** in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,neutral,neutral
+Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,**fewest** Europeans are resident in Europe.,neutral,neutral
+Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are **nonresident** in Europe.,neutral,neutral
+A **many** committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Sweden.,neutral,neutral
+A few committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a **many** committee members are from Sweden.,neutral,neutral
+At **most** three commissioners spend time at home.,At least three commissioners spend a lot of time at home.,neutral,neutral
+At least three commissioners spend time at home.,At **most** three commissioners spend a lot of time at home.,neutral,neutral
+At **fewest** ten commissioners spend time at home.,At most ten commissioners spend a lot of time at home.,contradiction,entailment
+At most ten commissioners spend time at home.,At **fewest** ten commissioners spend a lot of time at home.,contradiction,entailment
+Every Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the **south** American continent.,Every resident of the North American continent can travel freely within Europe.,neutral,neutral
+Every Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Every resident of the **south** American continent can travel freely within Europe.,neutral,neutral
+All Canadian residents can travel freely within Europe. Every Canadian resident is a resident of the **south** American continent.,All residents of the North American continent can travel freely within Europe.,neutral,neutral
+All Canadian residents can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,All residents of the **south** American continent can travel freely within Europe.,neutral,neutral
+Each Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the **south** American continent.,Each resident of the North American continent can travel freely within Europe.,neutral,neutral
+Each Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Each resident of the **south** American continent can travel freely within Europe.,neutral,neutral
+The residents of major **eastern** countries can travel freely within Europe. All residents of major **eastern** countries are residents of **eastern** countries.,The residents of western countries have the right to live in Europe.,neutral,neutral
+The residents of major western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of **eastern** countries have the right to live in Europe.,neutral,neutral
 **few** British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,neutral,neutral
 Many British delegates obtained **uninteresting** results from the survey.,Many delegates obtained interesting results from the survey.,neutral,neutral
 Many British delegates obtained interesting results from the survey.,**few** delegates obtained interesting results from the survey.,contradiction,neutral
