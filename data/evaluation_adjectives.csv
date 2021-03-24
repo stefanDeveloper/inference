@@ -98,30 +98,30 @@ Each Canadian resident can travel freely within Europe. Every Canadian resident 
 Each Canadian resident can travel freely within Europe. Every Canadian resident is a resident of the North American continent.,Each resident of the **south** American continent can travel freely within Europe.,,neutral
 The residents of major **eastern** countries can travel freely within Europe. All residents of major **eastern** countries are residents of **eastern** countries.,The residents of western countries have the right to live in Europe.,,neutral
 The residents of major western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of **eastern** countries have the right to live in Europe.,,neutral
-**few** British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,,neutral
-Many British delegates obtained **uninteresting** results from the survey.,Many delegates obtained interesting results from the survey.,,neutral
-Many British delegates obtained interesting results from the survey.,**few** delegates obtained interesting results from the survey.,,neutral
-Many British delegates obtained interesting results from the survey.,Many delegates obtained **uninteresting** results from the survey.,,neutral
-Several Portuguese delegates got the results published in major **international** newspapers.,Several delegates got the results published in major national newspapers.,,entailment
-Several Portuguese delegates got the results published in **minor** national newspapers.,Several delegates got the results published in major national newspapers.,,entailment
-Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in major **international** newspapers.,,entailment
-Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in **minor** national newspapers.,,entailment
-**fewest** Europeans who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,,neutral
-Most Europeans who are resident in Europe can travel freely within Europe.,**fewest** Europeans can travel freely within Europe.,,neutral
-A **many** female committee members are from Scandinavia.,At least a few committee members are from Scandinavia.,,entailment
-A few female committee members are from Scandinavia.,At least a **many** committee members are from Scandinavia.,,entailment
-Few female committee members are from **northern** Europe.,Few committee members are from southern Europe.,,neutral
-**many** female committee members are from southern Europe.,Few committee members are from southern Europe.,,neutral
-Few female committee members are from southern Europe.,Few committee members are from **northern** Europe.,,neutral
-Few female committee members are from southern Europe.,**many** committee members are from southern Europe.,,neutral
-At **most** three female commissioners spend time at home.,At least three commissioners spend time at home.,,entailment
-At least three female commissioners spend time at home.,At **most** three commissioners spend time at home.,,entailment
-At **fewest** ten female commissioners spend time at home.,At most ten commissioners spend time at home.,,neutral
-At most ten female commissioners spend time at home.,At **fewest** ten commissioners spend time at home.,,neutral
-The residents of **eastern** countries can travel freely within Europe. All residents of major **eastern** countries are residents of **eastern** countries.,The residents of major western countries have the right to live in Europe.,,entailment
-The residents of western countries can travel freely within Europe. All residents of **minor** western countries are residents of western countries.,The residents of major western countries have the right to live in Europe.,,entailment
-The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of **minor** western countries have the right to live in Europe.,,entailment
-The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of major **eastern** countries have the right to live in Europe.,,entailment
+**few** British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,neutral,neutral
+Many British delegates obtained **uninteresting** results from the survey.,Many delegates obtained interesting results from the survey.,neutral,neutral
+Many British delegates obtained interesting results from the survey.,**few** delegates obtained interesting results from the survey.,contradiction,neutral
+Many British delegates obtained interesting results from the survey.,Many delegates obtained **uninteresting** results from the survey.,neutral,neutral
+Several Portuguese delegates got the results published in major **international** newspapers.,Several delegates got the results published in major national newspapers.,neutral,entailment
+Several Portuguese delegates got the results published in **minor** national newspapers.,Several delegates got the results published in major national newspapers.,neutral,entailment
+Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in major **international** newspapers.,neutral,entailment
+Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in **minor** national newspapers.,neutral,entailment
+**fewest** Europeans who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,contradiction,neutral
+Most Europeans who are resident in Europe can travel freely within Europe.,**fewest** Europeans can travel freely within Europe.,neutral,neutral
+A **many** female committee members are from Scandinavia.,At least a few committee members are from Scandinavia.,entailment,entailment
+A few female committee members are from Scandinavia.,At least a **many** committee members are from Scandinavia.,neutral,entailment
+Few female committee members are from **northern** Europe.,Few committee members are from southern Europe.,neutral,neutral
+**many** female committee members are from southern Europe.,Few committee members are from southern Europe.,contradiction,neutral
+Few female committee members are from southern Europe.,Few committee members are from **northern** Europe.,neutral,neutral
+Few female committee members are from southern Europe.,**many** committee members are from southern Europe.,neutral,neutral
+At **most** three female commissioners spend time at home.,At least three commissioners spend time at home.,contradiction,entailment
+At least three female commissioners spend time at home.,At **most** three commissioners spend time at home.,contradiction,entailment
+At **fewest** ten female commissioners spend time at home.,At most ten commissioners spend time at home.,contradiction,neutral
+At most ten female commissioners spend time at home.,At **fewest** ten commissioners spend time at home.,contradiction,neutral
+The residents of **eastern** countries can travel freely within Europe. All residents of major **eastern** countries are residents of **eastern** countries.,The residents of major western countries have the right to live in Europe.,neutral,entailment
+The residents of western countries can travel freely within Europe. All residents of **minor** western countries are residents of western countries.,The residents of major western countries have the right to live in Europe.,entailment,entailment
+The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of **minor** western countries have the right to live in Europe.,entailment,entailment
+The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of major **eastern** countries have the right to live in Europe.,neutral,entailment
 **few** delegates obtained interesting results from the survey.,Many British delegates obtained interesting results from the survey.,contradiction,neutral
 Many delegates obtained **uninteresting** results from the survey.,Many British delegates obtained interesting results from the survey.,neutral,neutral
 Many delegates obtained interesting results from the survey.,**few** British delegates obtained interesting results from the survey.,neutral,neutral
