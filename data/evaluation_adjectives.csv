@@ -141,4 +141,4 @@ Few committee members are from southern Europe.,**many** female committee member
 At **most** three commissioners spend time at home.,At least three male commissioners spend time at home.,,neutral
 At least three commissioners spend time at home.,At **most** three male commissioners spend time at home.,,neutral
 At **fewest** ten commissioners spend time at home.,At most ten female commissioners spend time at home.,,entailment
-At most ten commissioners spend time at home.,At **fewest** ten female commissioners spend time at home.,,entailment
+At most ten commissioners spend time at home.,At **fewest** ten female commissioners spend time at home.,contradiction,entailment
