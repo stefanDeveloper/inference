@@ -122,23 +122,23 @@ The residents of **eastern** countries can travel freely within Europe. All resi
 The residents of western countries can travel freely within Europe. All residents of **minor** western countries are residents of western countries.,The residents of major western countries have the right to live in Europe.,,entailment
 The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of **minor** western countries have the right to live in Europe.,,entailment
 The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of major **eastern** countries have the right to live in Europe.,,entailment
-**few** delegates obtained interesting results from the survey.,Many British delegates obtained interesting results from the survey.,,neutral
-Many delegates obtained **uninteresting** results from the survey.,Many British delegates obtained interesting results from the survey.,,neutral
-Many delegates obtained interesting results from the survey.,**few** British delegates obtained interesting results from the survey.,,neutral
-Many delegates obtained interesting results from the survey.,Many British delegates obtained **uninteresting** results from the survey.,,neutral
-Several delegates got the results published in major **international** newspapers.,Several Portuguese delegates got the results published in major national newspapers.,,neutral
-Several delegates got the results published in **minor** national newspapers.,Several Portuguese delegates got the results published in major national newspapers.,,neutral
-Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in major **international** newspapers.,,neutral
-Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in **minor** national newspapers.,,neutral
-**fewest** Europeans can travel freely within Europe.,Most Europeans who are resident outside Europe can travel freely within Europe.,,neutral
-Most Europeans can travel freely within Europe.,**fewest** Europeans who are resident outside Europe can travel freely within Europe.,,neutral
-A **many** committee members are from Scandinavia.,At least a few female committee members are from Scandinavia.,,neutral
-A few committee members are from Scandinavia.,At least a **many** female committee members are from Scandinavia.,,neutral
-Few committee members are from **northern** Europe.,Few female committee members are from southern Europe.,,entailment
-**many** committee members are from southern Europe.,Few female committee members are from southern Europe.,,entailment
-Few committee members are from southern Europe.,Few female committee members are from **northern** Europe.,,entailment
-Few committee members are from southern Europe.,**many** female committee members are from southern Europe.,,entailment
-At **most** three commissioners spend time at home.,At least three male commissioners spend time at home.,,neutral
-At least three commissioners spend time at home.,At **most** three male commissioners spend time at home.,,neutral
-At **fewest** ten commissioners spend time at home.,At most ten female commissioners spend time at home.,,entailment
+**few** delegates obtained interesting results from the survey.,Many British delegates obtained interesting results from the survey.,contradiction,neutral
+Many delegates obtained **uninteresting** results from the survey.,Many British delegates obtained interesting results from the survey.,neutral,neutral
+Many delegates obtained interesting results from the survey.,**few** British delegates obtained interesting results from the survey.,neutral,neutral
+Many delegates obtained interesting results from the survey.,Many British delegates obtained **uninteresting** results from the survey.,neutral,neutral
+Several delegates got the results published in major **international** newspapers.,Several Portuguese delegates got the results published in major national newspapers.,neutral,neutral
+Several delegates got the results published in **minor** national newspapers.,Several Portuguese delegates got the results published in major national newspapers.,neutral,neutral
+Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in major **international** newspapers.,neutral,neutral
+Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in **minor** national newspapers.,neutral,neutral
+**fewest** Europeans can travel freely within Europe.,Most Europeans who are resident outside Europe can travel freely within Europe.,neutral,neutral
+Most Europeans can travel freely within Europe.,**fewest** Europeans who are resident outside Europe can travel freely within Europe.,neutral,neutral
+A **many** committee members are from Scandinavia.,At least a few female committee members are from Scandinavia.,neutral,neutral
+A few committee members are from Scandinavia.,At least a **many** female committee members are from Scandinavia.,contradiction,neutral
+Few committee members are from **northern** Europe.,Few female committee members are from southern Europe.,neutral,entailment
+**many** committee members are from southern Europe.,Few female committee members are from southern Europe.,neutral,entailment
+Few committee members are from southern Europe.,Few female committee members are from **northern** Europe.,neutral,entailment
+Few committee members are from southern Europe.,**many** female committee members are from southern Europe.,contradiction,entailment
+At **most** three commissioners spend time at home.,At least three male commissioners spend time at home.,neutral,neutral
+At least three commissioners spend time at home.,At **most** three male commissioners spend time at home.,neutral,neutral
+At **fewest** ten commissioners spend time at home.,At most ten female commissioners spend time at home.,neutral,entailment
 At most ten commissioners spend time at home.,At **fewest** ten female commissioners spend time at home.,contradiction,entailment
