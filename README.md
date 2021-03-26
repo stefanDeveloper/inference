@@ -52,6 +52,19 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 
 ### Statistics
 
+#### Accuracy
+
+| Model                          | `data/evaluation.csv` | `data/evaluation-adj.csv` |
+| ------------------------------ | --------------------- | ------------------------- |
+| `facebook/bart-large-mnli`     | 65.25%                |                           |
+| `microsoft/deberta-large-mnli` | 71.19%                |                           |
+| `models/bart-mq`               | 57.63%                |                           |
+| `models/deberta-mq`            | 61.86%                |                           |
+| `models/bart-adj`              |                       |                           |
+| `models/deberta-adj`           |                       |                           |
+
+#### ROC curves
+
 | BART                                                               | DeBERTa                                                                |
 | ------------------------------------------------------------------ | ---------------------------------------------------------------------- |
 | ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-csv.svg) | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-csv.svg) |
