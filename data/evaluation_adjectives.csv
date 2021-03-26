@@ -56,7 +56,7 @@ The new general artificial intelligence I'm developing should come with an off s
 The new general artificial intelligence I'm developing should come with an off switch.,A general **natural** intelligence should always come with an off switch.,neutral,neutral
 The really **unambitious** tenors are Italian.,There are really ambitious tenors who are Italian.,neutral,entailment
 The really ambitious tenors are Italian.,There are really **unambitious** tenors who are Italian.,neutral,entailment
-No really great tenors are **immodest**.,There are really great tenors who are modest.,neutral,contradiction
+No really great tenors are **immodest**.,There are really great tenors who are modest.,entailment,contradiction
 No really great tenors are modest.,There are really great tenors who are **immodest**.,entailment,contradiction
 A few great tenors sing **unpopular** music. Some great tenors like **unpopular** music.,There are great tenors who sing popular music.,neutral,entailment
 A few great tenors sing popular music. Some great tenors like popular music.,There are great tenors who sing **unpopular** music.,neutral,entailment
