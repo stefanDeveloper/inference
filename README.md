@@ -10,7 +10,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Usage - Training / Classifying
+## Usage
 
 ```sh
 source .venv/bin/activate
@@ -24,6 +24,14 @@ python -m sarn.roc microsoft/deberta-large-mnli data/evaluation.csv
 python -m sarn.accuracy models/deberta-mq data/evaluation.csv
 # Dataset statistics
 python -m sarn.stats data/training.csv
+# Language Interpretability Tool
+python -m lit.main \
+  --models "./models/deberta-mq" \
+           "./models/bart-mq" \
+           "facebook/bart-large-mnli" \
+           "microsoft/deberta-large-mnli" \
+  --datasets "./data/evaluation.csv" "./data/training.csv" \
+  --cache_dir=cache_dir
 ```
 
 For `--model`, any valid [Huggingface model](https://huggingface.co/transformers/pretrained_models.html) (local or remote) can be specified that has been [finetuned for sequence classification](https://huggingface.co/models?pipeline_tag=text-classification), e.g., [`facebook/bart-large-mnli`](https://huggingface.co/facebook/bart-large-mnli), [`microsoft/deberta-large-mnli`](https://huggingface.co/microsoft/deberta-large-mnli) or a local path like `models/bart-mq`.
@@ -32,13 +40,6 @@ For `--model`, any valid [Huggingface model](https://huggingface.co/transformers
 
 ```sh
 source .venv/bin/activate
-python -m lit.main \
-  --models "./models/deberta-mq" \
-           "./models/bart-mq" \
-           "facebook/bart-large-mnli" \
-           "microsoft/deberta-large-mnli" \
-  --datasets "./data/evaluation.csv" "./data/training.csv" \
-  --cache_dir=cache_dir
 ```
 
 ## Tips
