@@ -25,7 +25,7 @@ python -m sarn.accuracy models/deberta-mq data/evaluation.csv
 # Dataset statistics
 python -m sarn.stats data/training.csv
 # Language Interpretability Tool
-python -m lit.main \
+python -m lit \
   --models "./models/deberta-mq" \
            "./models/bart-mq" \
            "facebook/bart-large-mnli" \
