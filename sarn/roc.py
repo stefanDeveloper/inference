@@ -18,7 +18,7 @@ def get_valid_filename(s):
 
 
 parser = argparse.ArgumentParser(
-    description="Finetuning of a specified model on the specified dataset"
+    description="ROC curve diagrams of a model on an evaluation dataset"
 )
 parser.add_argument("model")
 parser.add_argument("dataset")
