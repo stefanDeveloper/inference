@@ -50,7 +50,52 @@ python -m lit.main \
 scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/models .
 ```
 
-### Statistics
+### Dataset statistics
+
+#### Character length
+
+| Dataset                   | avg   | median | min | max |
+| ------------------------- | ----- | ------ | --- | --- |
+| `data/training.csv`       |
+| Premises                  | 48.26 | 41     | 5   | 478 |
+| Hypotheses                | 48.93 | 42     | 5   | 478 |
+| `data/evaluation.csv`     |
+| Premises                  | 79.84 | 58     | 26  | 206 |
+| Hypotheses                | 61.57 | 50     | 26  | 186 |
+| `data/training-adj.csv`   |
+| Premises                  |       |        |     |     |
+| Hypotheses                |       |        |     |     |
+| `data/evaluation-adj.csv` |
+| Premises                  |       |        |     |     |
+| Hypotheses                |       |        |     |     |
+
+#### Word length
+
+| Dataset                   | avg   | median | min | max |
+| ------------------------- | ----- | ------ | --- | --- |
+| `data/training.csv`       |
+| Premises                  | 9.98  | 9      | 2   | 83  |
+| Hypotheses                | 10.10 | 9      | 2   | 83  |
+| `data/evaluation.csv`     |
+| Premises                  | 13.03 | 10     | 5   | 34  |
+| Hypotheses                | 10.14 | 9      | 5   | 30  |
+| `data/training-adj.csv`   |
+| Premises                  |       |        |     |     |
+| Hypotheses                |       |        |     |     |
+| `data/evaluation-adj.csv` |
+| Premises                  |       |        |     |     |
+| Hypotheses                |       |        |     |     |
+
+#### Labels
+
+| Dataset                   | total  | contradiction | neutral         | entailment      |
+| ------------------------- | ------ | ------------- | --------------- | --------------- |
+| `data/training.csv`       | 41'273 | 0 (0.00%)     | 20'699 (50.15%) | 20'574 (49.85%) |
+| `data/evaluation.csv`     | 118    | 15 (12.71%)   | 52 (44.07%)     | 51 (43.22%)     |
+| `data/training-adj.csv`   |        |               |                 |                 |
+| `data/evaluation-adj.csv` |        |               |                 |                 |
+
+### Model statistics
 
 #### Accuracy
 
