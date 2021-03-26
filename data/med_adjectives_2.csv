@@ -1,7 +1,7 @@
 Tom doesn't spend **little** time in Boston today.,Tom doesn't spend much time in Boston.,neutral,neutral
 Many aliens bought shirts.,**few** aliens bought clothes.,contradiction,entailment
 Tom was wearing a **white** hat.,Tom was wearing a black sweater.,neutral,neutral
-Every alien who did not eat some pork is hairy.,Every alien who did not eat meat is **hairless**.,neutral,entailment
+Every alien who did not eat some pork is hairy.,Every alien who did not eat meat is **hairless**.,contradiction,entailment
 "If **nonhuman** life is convex, we can optimize it.","If human life is unusual and convex, we can optimize it.",neutral,entailment
 There are no other good options.,There are no **better** options.,neutral,neutral
 **few** people in Fiji don't have access to clean drinking water.,Many people in Fiji don't have basic access to clean drinking water.,contradiction,entailment
@@ -26,7 +26,7 @@ Every unmarried man is a groom for life.,Every **married** man from my city is a
 The first displeasurable experience I had interacting with another human being was at the age of seventeen.,The **last** pleasurable experience I had interacting with another human being was at the age of seventeen.,neutral,neutral
 You don't have to go to an Ivy League college to get a **bad** education.,You don't have to go to an Ivy League French college to get a good education.,neutral,entailment
 **few** children decided on the cotton candy.,Many children chose any mint chocolates or decided on the cotton candy.,neutral,entailment
-Every alien who did not read some magazines is **hairless**.,Every alien who did not read news magazines is hairy.,neutral,neutral
+Every alien who did not read some magazines is **hairless**.,Every alien who did not read news magazines is hairy.,contradiction,neutral
 I just want to sleep for a few hours.,I just want to sleep for **many** minutes to recover from fatigue.,neutral,neutral
 I don't answer stupid questions that tend to offend me.,I don't answer **smart** questions.,neutral,neutral
 Every member of the cabinet was **absent**.,Every particular member of the cabinet was present.,contradiction,entailment
@@ -86,7 +86,7 @@ At least **all** children chose mint chocolates or decided on the cotton candy.,
 At **most** five campers have ever had a sunburn or caught a cold.,At least five campers have caught a cold.,contradiction,neutral
 He added a little sugar to the coffee.,He added a **large** saccharin to the coffee.,neutral,neutral
 I don't want to get a full denture.,I don't want to get a **empty** strong denture.,neutral,entailment
-Every alien who did not read any news magazines is **hairless**.,Every alien who did not read magazines is hairy.,neutral,entailment
+Every alien who did not read any news magazines is **hairless**.,Every alien who did not read magazines is hairy.,contradiction,entailment
 Every new student has free access to the library.,Every student has **unfree** access to the library.,neutral,neutral
 "Tom doesn't want an IPad, but he wants a portable device that supports flash.","Tom doesn't want an iproduct, but he wants a **unportable** device that supports flash.",neutral,entailment
 **more** than five campers have caught a cold.,Less than five campers have ever had a sunburn or caught a cold.,contradiction,neutral
@@ -100,10 +100,10 @@ Many aliens read news magazines.,**few** aliens read magazines.,contradiction,en
 At **fewest** half campers have ever had a sunburn or caught a cold.,At most half campers have caught a cold.,contradiction,entailment
 Extraordinary things never happen in simple and ordinary ways they are complicated.,Extraordinary things never happen in simple and **extraordinary** ways.,neutral,neutral
 My tree had many blossoms but **no** fruit.,My tree had a many blossoms but **few** fruits to eat.,contradiction,entailment
-Every alien who did not eat some meat is hairy.,Every alien who did not eat pork is **hairless**.,neutral,neutral
+Every alien who did not eat some meat is hairy.,Every alien who did not eat pork is **hairless**.,contradiction,neutral
 **few** people in Fiji don't have access to clean drinking water.,Many people in Fiji don't have access at all to clean drinking hot water.,neutral,entailment
 Very **many** children chose mint chocolates or decided on the cotton candy.,Very few children decided on the cotton candy.,neutral,entailment
-Every alien who did not buy any clothes is **hairless**.,Every alien who did not buy shirts is hairy.,neutral,neutral
+Every alien who did not buy any clothes is **hairless**.,Every alien who did not buy shirts is hairy.,contradiction,neutral
 Tom swims every other day.,Tom swims in pool every **same** day.,neutral,neutral
 "If i were a foreigner, i probably couldn't eat **cooked** fish.","If i were a foreigner, i probably couldn't eat raw fish or meat.",neutral,entailment
 Tom is facing a few serious problems.,Tom is facing a few **frivolous** work problems.,neutral,neutral
@@ -111,23 +111,23 @@ Madonna's concert drew a **small** and loud audience.,Madonna's concert drew a l
 My first car didn't have power steering.,My **last** car didn't have electric power steering.,neutral,entailment
 **few** aliens read some books.,Many aliens read some sci-fi novels.,neutral,neutral
 **few** people in Fiji don't have access to clean drinking water.,Many people in Fiji don't have access to clean drinking running water.,neutral,entailment
-Every alien who did not use any coins is **hairless**.,Every alien who did not use quarters is hairy.,neutral,neutral
+Every alien who did not use any coins is **hairless**.,Every alien who did not use quarters is hairy.,contradiction,neutral
 Many aliens threw balls.,**few** aliens threw tennis balls.,neutral,neutral
 Senator Rosario Ibarra is a human rights militant.,Senator poltician is a **nonhuman** rights militant.,neutral,neutral
 "If i were a foreigner, i probably couldn't eat raw fish.","If i were a tourist, i probably couldn't eat **cooked** fish.",neutral,entailment
 Most Americans can't speak German.,**fewest** Americans can't speak German because it is not their native language.,contradiction,entailment
-Every alien who did not buy clothes is **hairless**.,Every alien who did not buy shirts is hairy.,neutral,neutral
+Every alien who did not buy clothes is **hairless**.,Every alien who did not buy shirts is hairy.,contradiction,neutral
 "If human life is convex, we can optimize it.","If human life is unusual and **concave**, we can optimize it.",neutral,entailment
 Dogs have all the good qualities of people without at the same time possessing their weaknesses.,Dogs and all pets have all the **bad** qualities of people without at the same time possessing their weaknesses.,neutral,neutral
 At **most** one man sang and danced.,At least one man danced.,neutral,entailment
 Many delegates obtained interesting results from the survey.,Many British delegates obtained **uninteresting** results from the survey.,neutral,neutral
 Tom hasn't bought a **old** pair of shoes in three years.,Tom hasn't bought a new pair of adidas shoes in three years.,neutral,entailment
-Every alien who did not read sci-fi novels is hairy.,Every alien who did not read books is **hairless**.,neutral,entailment
+Every alien who did not read sci-fi novels is hairy.,Every alien who did not read books is **hairless**.,contradiction,entailment
 You know that some actions must be taken when grandma reacts with the **glad** emoji.,You know that some life changing actions must be taken when grandma reacts with the sad emoji.,neutral,neutral
 A good tree can't bear bad fruits.,A good tree can't bear **good** tropical fruits.,contradiction,entailment
 Many aliens watched sports matches.,**few** aliens watched baseball matches.,neutral,neutral
 Many people in Fiji don't have access to clean drinking water on foot at all.,**few** people in Fiji don't have access to clean drinking water.,neutral,neutral
-Every alien who did not watch some baseball matches is **hairless**.,Every alien who did not watch sports matches is hairy.,neutral,entailment
+Every alien who did not watch some baseball matches is **hairless**.,Every alien who did not watch sports matches is hairy.,contradiction,entailment
 "If **nonhuman** life is convex, we can optimize it.","If human hard life is convex, we can optimize it.",neutral,entailment
 She has been studying French for **many** days.,She has been studying French for a few years.,neutral,neutral
 Many aliens saw doves.,**few** aliens saw birds.,contradiction,entailment
@@ -154,13 +154,13 @@ Many of the books had typical readers.,**few** of the books had typical or margi
 Tom hasn't bought a new pair of adidas shoes in three years.,Tom hasn't bought a **old** pair of shoes in three years.,neutral,neutral
 People who regularly work in the open air do not suffer from sleeplessness.,People who regularly work in the **shut** air do not suffer from lack of deep sleep.,neutral,entailment
 Most dots are scarlet.,**fewest** dots are red.,neutral,entailment
-Every alien who did not read some books is hairy.,Every alien who did not read sci-fi novels is **hairless**.,neutral,neutral
+Every alien who did not read some books is hairy.,Every alien who did not read sci-fi novels is **hairless**.,contradiction,neutral
 He believed that blacks could win their fight for equal rights without any serious violence.,He believed that blacks could win their fight for **unequal** rights without violence.,neutral,neutral
 Few aliens drove any suvs.,**many** aliens drove cars.,neutral,neutral
 More than half of the tenors have the flu.,**lesser** than half of the tenors are sick.,contradiction,entailment
 John inherited a large fortune and beauty jewerly.,John inherited a **small** fortune.,contradiction,entailment
 **few** aliens saw doves.,Many aliens saw birds.,neutral,entailment
-Every alien who did not eat at Mexican restaurants is hairy.,Every alien who did not eat at restaurants is **hairless**.,neutral,entailment
+Every alien who did not eat at Mexican restaurants is hairy.,Every alien who did not eat at restaurants is **hairless**.,contradiction,entailment
 She has no spatial awareness.,She has no **nonspatial** awareness of good life.,neutral,entailment
 Farragut captured new orleans **with** a fight.,Farragut captured new orleans without a single problem or any kind of dispute.,contradiction,entailment
 **many** aliens bought any shirts.,Few aliens bought any clothes.,contradiction,neutral
@@ -194,12 +194,12 @@ I bought a **many** eggs and a little milk.,I bought a few chicken eggs and a li
 John inherited a **small** fortune and beauty jewerly.,John inherited a large fortune.,contradiction,entailment
 The first experience I had interacting with another human being was at the age of seventeen.,The **last** pleasurable experience I had interacting with another human being was at the age of seventeen.,neutral,neutral
 Arabic isn't a **easy** language.,Arabic isn't a difficult world language.,neutral,entailment
-Every alien who did not eat at some restaurants is hairy.,Every alien who did not eat at Mexican restaurants is **hairless**.,neutral,neutral
+Every alien who did not eat at some restaurants is hairy.,Every alien who did not eat at Mexican restaurants is **hairless**.,contradiction,neutral
 Tom doesn't spend much time in Boston today.,Tom doesn't spend **little** time in Boston.,neutral,neutral
 Tom has a few friends in Boston.,Tom has a **many** friends in Texas.,neutral,neutral
 It is no wonder that a man of his ability is **unsuccessful**.,It is no wonder that a capable man of his ability is successful.,contradiction,entailment
 **few** aliens used coins.,Many aliens used quarters.,contradiction,neutral
-Every alien who did not play with toy cars is hairy.,Every alien who did not play with toys is **hairless**.,neutral,entailment
+Every alien who did not play with toy cars is hairy.,Every alien who did not play with toys is **hairless**.,contradiction,entailment
 Not **few** campers have had a sunburn or caught a cold.,Not many campers have caught a cold.,neutral,entailment
 **more** than five of campers have caught a cold.,Less than five of campers have had a sunburn or caught a cold.,neutral,neutral
 John inherited a **small** fortune.,John inherited a large horse.,neutral,neutral
@@ -207,7 +207,7 @@ At least half campers have had a sunburn or caught a cold.,At **most** half camp
 The talk between labor and management yielded no definite results.,The talk between labor and management yielded no **indefinite** earnings.,neutral,entailment
 All the passengers are in mortal danger and fear.,All the passengers are in **immortal** danger.,contradiction,entailment
 We have some **finished** business.,We have some unfinished songs.,neutral,neutral
-Every alien who did not throw some tennis balls is **hairless**.,Every alien who did not throw balls is hairy.,neutral,entailment
+Every alien who did not throw some tennis balls is **hairless**.,Every alien who did not throw balls is hairy.,contradiction,entailment
 My first car didn't have power steering.,My **last** car didn't have hydraulic power steering.,neutral,entailment
 Rock climbing without proper equipment is dangerous.,Rock climbing without **improper** reliable equipment is dangerous.,neutral,entailment
 Rudolf has built a large house.,Rudolf has built a **small** building.,neutral,neutral
@@ -226,11 +226,11 @@ Every body here is **idle** except me.,Every body is busy except me.,contradicti
 The tanker has only a **large** crew on board.,The tanker has only a small crew on board for being operated.,contradiction,entailment
 "Regional governors could not rely on the king for help in times of crisis, and the ensuing food shortages and political disputes escalated into famines and small-scale **uncivil** wars.","Regional governors could not rely on anyone for help in times of crisis, and the ensuing food shortages and political disputes escalated into famines and small-scale civil wars.",neutral,neutral
 **few** aliens bought some clothes.,Many aliens bought some shirts.,contradiction,neutral
-Every alien who did not see some birds is hairy.,Every alien who did not see doves is **hairless**.,neutral,neutral
+Every alien who did not see some birds is hairy.,Every alien who did not see doves is **hairless**.,contradiction,neutral
 He believed that blacks could win their fight for equal rights without violence and rioting.,He believed that blacks could win their fight for **unequal** rights without violence.,neutral,neutral
 At least half children chose mint chocolates or decided on the cotton candy.,At least **all** children decided on the cotton candy.,contradiction,neutral
 Extraordinary things never happen in simple and ordinary ways.,Extraordinary things never happen in simple and **extraordinary** usual ways.,neutral,entailment
-Every alien who did not drive suvs is hairy.,Every alien who did not drive cars is **hairless**.,neutral,entailment
+Every alien who did not drive suvs is hairy.,Every alien who did not drive cars is **hairless**.,contradiction,entailment
 Rock climbing without proper equipment is dangerous.,Rock climbing without proper equipment of good quality is **safe**.,contradiction,entailment
 "Every day, my brother borrows a **old** book from the library.","Every day, my brother borrows a new t-shirt from me.",neutral,neutral
 We consider all context words as positive examples and sample negatives at random from the dictionary.,We consider all words as **negative** examples and sample negatives at random from the dictionary.,contradiction,neutral
@@ -249,7 +249,7 @@ It's not **false** that Betty doesn't live in Germany.,It's not true that Betty 
 **few** aliens drank some soda.,Many aliens drank coke.,neutral,neutral
 Dogs have all the **bad** qualities of people without at the same time possessing their weaknesses.,Dogs and cats have all the good qualities of people without at the same time possessing their weaknesses.,contradiction,neutral
 Tom isn't a **good** coach for his team players.,Tom isn't a bad coach.,neutral,neutral
-Every alien who did not eat at some Mexican restaurants is hairy.,Every alien who did not eat at restaurants is **hairless**.,neutral,entailment
+Every alien who did not eat at some Mexican restaurants is hairy.,Every alien who did not eat at restaurants is **hairless**.,contradiction,entailment
 The crown prince's mother wouldn't be the **last** saudi royal whose movements were restricted since June 2017.,The crown prince's mother wouldn't be the first royal whose movements were restricted since June 2017.,neutral,entailment
 Most Americans can't speak German.,**fewest** Americans can't speak German like a native.,contradiction,entailment
 There are no clean plates.,There are no **dirty** guest plates.,neutral,entailment
@@ -263,7 +263,7 @@ Tom is facing a **many** serious problems.,Tom is facing a few serious health pr
 I wish you all a Merry Christmas and a **unhappy** New Year.,I sincerely wish you all a Merry Christmas and a Happy New Year.,contradiction,entailment
 The girl wore a light blue ugly kimono.,The girl wore a **dark** blue kimono.,contradiction,entailment
 Every **short** man from Japan ran quickly.,Every tall man ran.,neutral,neutral
-Every alien who did not drink any soda is **hairless**.,Every alien who did not drink coke is hairy.,neutral,neutral
+Every alien who did not drink any soda is **hairless**.,Every alien who did not drink coke is hairy.,contradiction,neutral
 The **last** experience I had interacting with another human being was at the age of seventeen.,The first pleasurable experience I had interacting with another human being was at the age of seventeen.,neutral,neutral
 No wedding would be complete without a fight with a partner.,No wedding would be **incomplete** without a fight.,neutral,entailment
 At least **all** children chose any mint chocolates or decided on the cotton candy.,At least half children decided on the cotton candy.,neutral,neutral
@@ -281,7 +281,7 @@ I don't eat **ripe** peppers at all.,I don't eat rotten green peppers at all.,ne
 I bought a few eggs and a little milk.,I bought a few creamers and a **large** milk.,contradiction,neutral
 Today is not good for me.,Meeting today is not **bad** for me.,neutral,neutral
 I don't want to miss happy breakfast hour.,I don't want to miss **unhappy** hour.,neutral,neutral
-Every alien who did not eat at any restaurants is **hairless**.,Every alien who did not eat at Mexican restaurants is hairy.,neutral,neutral
+Every alien who did not eat at any restaurants is **hairless**.,Every alien who did not eat at Mexican restaurants is hairy.,contradiction,neutral
 She got hepatitis no wonder she is losing so **little** weight.,She got hepatitis for a long time no wonder she is losing so much weight.,contradiction,neutral
 This story doesn't have a happy ending.,This story doesn't have a **unhappy** concluded ending.,neutral,entailment
 Every member of the cabinet was present.,Every gold partner member of the cabinet was **absent**.,contradiction,entailment
@@ -305,12 +305,12 @@ The word came to be used for all small heavenly bodies revolving about larger on
 **few** aliens played with toys.,Many aliens played with toy cars.,contradiction,neutral
 **few** aliens ate pork.,Many aliens ate meat.,neutral,entailment
 At least half children decided on the cotton candy.,At **most** half children chose mint chocolates or decided on the cotton candy.,contradiction,entailment
-Every alien who did not read some news magazines is hairy.,Every alien who did not read magazines is **hairless**.,neutral,entailment
+Every alien who did not read some news magazines is hairy.,Every alien who did not read magazines is **hairless**.,contradiction,entailment
 No **morer** than fifty campers have had a sunburn or caught a cold.,No less than fifty campers have caught a cold.,contradiction,neutral
 Less than five children decided on the cotton candy.,**more** than five children chose any mint chocolates or decided on the cotton candy.,neutral,neutral
 Every tall man ran quickly.,Every **short** man ran.,neutral,entailment
 Every **married** man is a groom for life.,Every unmarried man from my city is a groom for life.,neutral,entailment
-Every alien who did not read some sci-fi novels is hairy.,Every alien who did not read books is **hairless**.,neutral,entailment
+Every alien who did not read some sci-fi novels is hairy.,Every alien who did not read books is **hairless**.,contradiction,entailment
 **many** aliens ate any pork.,Few aliens ate any meat.,contradiction,neutral
 **few** British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,neutral,neutral
 **few** people in Fiji don't have access to clean drinking mineral water.,Many people in Fiji don't have access to clean drinking water.,neutral,neutral
@@ -328,7 +328,7 @@ At most half campers have caught a cold.,At **fewest** half campers have ever ha
 Little Sophie was not obedient.,Sophie was not **disobedient** in her dance class.,neutral,entailment
 Tom doesn't like modern great art.,Tom doesn't like **nonmodern** art.,neutral,neutral
 My tree had a few blossoms but no fruit.,My tree had a **many** blossoms but no fruits to eat.,contradiction,entailment
-Every alien who did not use any quarters is hairy.,Every alien who did not use coins is **hairless**.,neutral,entailment
+Every alien who did not use any quarters is hairy.,Every alien who did not use coins is **hairless**.,contradiction,entailment
 Many aliens played with some toys.,**few** aliens played with some toy cars.,neutral,neutral
 Dogs have all the good qualities of people without at the same time possessing their weaknesses.,Dogs and cats have all the **bad** qualities of people without at the same time possessing their weaknesses.,neutral,neutral
 I don't have a good appetite for vegetable.,I don't have a **bad** appetite.,neutral,neutral
@@ -338,17 +338,17 @@ Today is not good for me.,Monday is not **bad** for me.,neutral,neutral
 The talk between labor and management yielded no definite results.,The talk between labor and management yielded no **indefinite** agreements.,neutral,entailment
 All Tom wanted was a nice hot bath.,All Tom wanted was a **nasty** hot and relaxing bath.,contradiction,neutral
 Very **many** of the children decided on the cotton candy.,Very few of the children chose mint chocolates or decided on the cotton candy.,contradiction,neutral
-Every alien who did not drink soda is **hairless**.,Every alien who did not drink coke is hairy.,neutral,neutral
+Every alien who did not drink soda is **hairless**.,Every alien who did not drink coke is hairy.,contradiction,neutral
 Arabic isn't a **easy** language.,Arabic isn't a difficult and rare language.,neutral,entailment
 Most Americans can't speak German spoken in hamburg.,**fewest** Americans can't speak German.,neutral,neutral
-Every alien who did not buy shirts is **hairless**.,Every alien who did not buy clothes is hairy.,neutral,entailment
+Every alien who did not buy shirts is **hairless**.,Every alien who did not buy clothes is hairy.,contradiction,entailment
 A **hot** bath refreshed him.,A cold water refreshed him.,neutral,neutral
-Every alien who did not play with some toys is hairy.,Every alien who did not play with toy cars is **hairless**.,neutral,neutral
+Every alien who did not play with some toys is hairy.,Every alien who did not play with toy cars is **hairless**.,contradiction,neutral
 I'll do my **worst** to have no regrets.,I'll do my best to have no regrets for anything.,contradiction,entailment
 At most half campers have ever had a sunburn or caught a cold.,At **fewest** half campers have caught a cold.,contradiction,entailment
 It's only a slight cold.,It's only a **much** head cold.,contradiction,entailment
 She slept for a **many** dreamless hours.,She slept for a few hours.,contradiction,neutral
-Every alien who did not throw any tennis balls is hairy.,Every alien who did not throw balls is **hairless**.,neutral,entailment
+Every alien who did not throw any tennis balls is hairy.,Every alien who did not throw balls is **hairless**.,contradiction,entailment
 The office was **large** but it had a view of the city.,The office was small but it had a smell of the city.,contradiction,neutral
 You're **still** children.,You're no longer small children.,contradiction,entailment
 "You're absolutely perfect, in every way.","You're absolutely **imperfect**, in every excellent way.",contradiction,entailment
@@ -399,7 +399,7 @@ Tom isn't very good at sports.,Tom isn't very **bad** at fixing those kinds of t
 Many people in Fiji don't have access to clean drinking water.,**few** people in Fiji don't have access to clean drinking cold water.,neutral,entailment
 Tom is facing a few serious problems to face exams.,Tom is facing a few **frivolous** problems.,neutral,entailment
 She has no **nonspatial** awareness.,She has no spatial awareness at all.,neutral,entailment
-Every alien who did not drink some soda is **hairless**.,Every alien who did not drink coke is hairy.,neutral,neutral
+Every alien who did not drink some soda is **hairless**.,Every alien who did not drink coke is hairy.,contradiction,neutral
 "If it's a nice day tomorrow, we'll go on a picnic.","If it's a **nasty** day tomorrow, we'll go on a horse riding.",neutral,neutral
 I could never afford a house as nice as that.,I could never afford a colorful house as **nasty** as that.,neutral,entailment
 No less than five campers have caught a cold.,No **more** than five campers have had a sunburn or caught a cold.,contradiction,entailment
@@ -408,7 +408,7 @@ Tom was wearing a **white** hat.,Tom was wearing a black cap.,contradiction,neut
 I don't answer stupid questions.,I don't answer **smart** questions that tend to offend me.,neutral,entailment
 My tree had a few blossoms but no fruit.,My tree had a **many** blossoms but no ripe fruit.,contradiction,entailment
 Few aliens ate any meat.,**many** aliens ate any pork.,contradiction,entailment
-Every alien who did not play with some toys is **hairless**.,Every alien who did not play with toy cars is hairy.,neutral,neutral
+Every alien who did not play with some toys is **hairless**.,Every alien who did not play with toy cars is hairy.,contradiction,neutral
 Jane didn't die a **unnatural** death.,Jane didn't die a natural death with no pain.,contradiction,entailment
 Germany has no **maximal** wage.,Germany has no minimum requirement wage.,neutral,entailment
 Germany has no **maximal** necessary wage.,Germany has no minimum wage.,neutral,neutral
@@ -427,14 +427,14 @@ Rudolf has built a **small** house.,Rudolf has built a large pent house with poo
 Few aliens used quarters.,**many** aliens used coins.,neutral,neutral
 The government has imposed a **old** tax on wine.,The government has imposed a new tax on famous wine.,neutral,neutral
 That was a fight which had no chance of a **unsuccessful** outcome.,That was a dilemma which had no chance of a successful outcome.,neutral,neutral
-Every alien who did not throw tennis balls is **hairless**.,Every alien who did not throw balls is hairy.,neutral,entailment
+Every alien who did not throw tennis balls is **hairless**.,Every alien who did not throw balls is hairy.,contradiction,entailment
 **more** than five of the children chose any mint chocolates or decided on the cotton candy.,Less than five of the children decided on the cotton candy.,neutral,entailment
 I don't want to get a full denture.,I don't want to get a **empty** teeth replacement.,neutral,entailment
 Many British delegates obtained interesting results from the survey.,**few** delegates obtained interesting results from the survey.,neutral,neutral
 Not a few good pupils could solve the problem.,Not a **many** pupils could solve the problem.,neutral,neutral
 Tom doesn't have a steady girlfriend.,Tom doesn't have a **unsteady** favorite girlfriend.,neutral,entailment
 **few** of the campers have caught a cold.,Many of the campers have ever had a sunburn or caught a cold.,neutral,entailment
-Every alien who did not see some doves is hairy.,Every alien who did not see birds is **hairless**.,neutral,entailment
+Every alien who did not see some doves is hairy.,Every alien who did not see birds is **hairless**.,contradiction,entailment
 I could never afford a beach house as **nasty** as that.,I could never afford a house as nice as that.,neutral,neutral
 Rudolf has built a **small** house.,Rudolf has built a large building.,neutral,neutral
 At **fewest** half children chose any mint chocolates or decided on the cotton candy.,At most half children decided on the cotton candy.,neutral,entailment
@@ -471,7 +471,7 @@ Tom isn't a **bad** romance writer.,Tom isn't a good writer.,neutral,neutral
 There are no **dirty** plates.,There are no clean guest plates.,neutral,entailment
 He has no specific aim.,He has no **general** good aim.,neutral,entailment
 He believed that blacks could win their fight for **unequal** rights without generalized violence.,He believed that blacks could win their fight for equal rights without violence.,neutral,neutral
-Every alien who did not see birds is **hairless**.,Every alien who did not see doves is hairy.,neutral,neutral
+Every alien who did not see birds is **hairless**.,Every alien who did not see doves is hairy.,contradiction,neutral
 Tom has a few friends in Boston.,Tom has a **many** sick friends in Boston.,contradiction,neutral
 He owns a private jet.,He owns a **public** home.,neutral,neutral
 I don't dig **nonmodern** jazz.,I don't dig modern jazz in work.,neutral,entailment
@@ -479,7 +479,7 @@ Many aliens drove some cars.,**few** aliens drove some suvs.,contradiction,neutr
 He is not a good driver.,He is not a **bad** driver at night.,neutral,entailment
 He had a **nonfatal** lack of ability to think logically.,He had a fatal lack of capacity to think logically.,neutral,entailment
 **few** people in Fiji don't have access to clean drinking water.,Many people in Fiji don't have access to clean soft drinking water.,neutral,entailment
-Every alien who did not drink any soda is hairy.,Every alien who did not drink coke is **hairless**.,neutral,neutral
+Every alien who did not drink any soda is hairy.,Every alien who did not drink coke is **hairless**.,contradiction,neutral
 **less** than five children decided on the cotton candy.,More than five children chose any mint chocolates or decided on the cotton candy.,neutral,entailment
 Tom and Mary were speaking to each other in a language i didn't recognize.,Tom and Mary were speaking to each other in a recognizable language i **did** recognize.,contradiction,neutral
 It is no wonder that a man of his ability is successful.,It is no wonder that a good looking man of his ability is **unsuccessful**.,contradiction,entailment
@@ -523,7 +523,7 @@ Tom is facing a **many** serious problems.,Tom is facing a few serious work prob
 Many aliens threw tennis balls.,**few** aliens threw balls.,contradiction,entailment
 More than five of campers have caught a cold.,**lesser** than five of campers have ever had a sunburn or caught a cold.,contradiction,entailment
 All Tom wanted was a **nasty** hot bath.,All Tom wanted was a nice hot and relaxing bath.,contradiction,neutral
-Every alien who did not throw any balls is hairy.,Every alien who did not throw tennis balls is **hairless**.,neutral,neutral
+Every alien who did not throw any balls is hairy.,Every alien who did not throw tennis balls is **hairless**.,contradiction,neutral
 "In all areas, **nonhuman** activity has changed the form of river channels, altering magnitudes and frequencies of flooding.","In all developed areas, human activity has changed the form of river channels, altering magnitudes and frequencies of flooding.",neutral,entailment
 I don't want to get a full denture.,I don't want to get a **empty** teeth change.,neutral,entailment
 I don't answer **smart** questions that tend to offend me.,I don't answer stupid questions.,neutral,neutral
@@ -543,14 +543,14 @@ Germany has no **maximal** wage.,Germany has no minimum necessary wage.,neutral,
 At most half children decided on the cotton candy.,At most **all** children chose mint chocolates or decided on the cotton candy.,neutral,neutral
 Sekkura is a **unqualified** chef.,Sekkura is a qualified dough puncher.,neutral,neutral
 "Tom is, without question, the best man for the job.","Tom is, without question and certainly, the **worst** man for the job.",contradiction,entailment
-Every alien who did not watch sports matches is **hairless**.,Every alien who did not watch baseball matches is hairy.,neutral,neutral
+Every alien who did not watch sports matches is **hairless**.,Every alien who did not watch baseball matches is hairy.,contradiction,neutral
 Many aliens saw some doves.,**few** aliens saw birds.,contradiction,entailment
 I could never afford a house as **nasty** as that.,I could never afford a colorful house as nice as that.,neutral,entailment
 It's not true that Betty doesn't live in Berlin.,It's not **false** that Betty doesn't live in Germany.,contradiction,entailment
-Every alien who did not eat at Mexican restaurants is **hairless**.,Every alien who did not eat at restaurants is hairy.,neutral,entailment
+Every alien who did not eat at Mexican restaurants is **hairless**.,Every alien who did not eat at restaurants is hairy.,contradiction,entailment
 No **less** than five children chose mint chocolates or decided on the cotton candy.,No more than five children decided on the cotton candy.,neutral,entailment
 **less** than five of campers have ever had a sunburn or caught a cold.,More than five of campers have caught a cold.,neutral,neutral
-Every alien who did not watch any sports matches is **hairless**.,Every alien who did not watch baseball matches is hairy.,neutral,neutral
+Every alien who did not watch any sports matches is **hairless**.,Every alien who did not watch baseball matches is hairy.,contradiction,neutral
 **few** aliens watched sports matches.,Many aliens watched baseball matches.,contradiction,neutral
 The tanker has only a small crew on board.,The tanker has only a **large** crew on board to move on.,contradiction,entailment
 No more than fifty children decided on the cotton candy.,No **less** than fifty children chose mint chocolates or decided on the cotton candy.,contradiction,neutral
@@ -586,7 +586,7 @@ The villagers have done without electricity in their home for a long time.,The v
 She's wearing a nice hat.,She's wearing a **nasty** summer hat.,contradiction,neutral
 No less than fifty campers have caught a cold.,No **morer** than fifty campers have had a sunburn or caught a cold.,contradiction,entailment
 You have no **illegal** right to seize my property.,You have no legal liberty to seize my property.,neutral,entailment
-Every alien who did not play with toy cars is **hairless**.,Every alien who did not play with toys is hairy.,neutral,entailment
+Every alien who did not play with toy cars is **hairless**.,Every alien who did not play with toys is hairy.,contradiction,entailment
 No **less** than fifty children decided on the cotton candy.,No more than fifty children chose any mint chocolates or decided on the cotton candy.,contradiction,neutral
 A big spider was spinning a web.,A **small** spider was spinning an awesome web.,neutral,neutral
 Today is not good for me.,Flying today is not **bad** for me.,neutral,neutral
