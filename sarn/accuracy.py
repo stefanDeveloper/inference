@@ -28,10 +28,10 @@ if __name__ == "__main__":
     batch_cnt = len(dataloader)
     for i, batch in enumerate(dataloader):
         classification_logits = model(**batch).logits
-        probas = torch.softmax(classification_logits, dim=1).numpy()
+        probas = torch.softmax(classification_logits, dim=1).detach().numpy()
         labels += probas.argmax(axis=1).tolist()
         if (i + 1) % 10 == 0:
             print("Batch", i + 1, "of", batch_cnt)
 
     acc = metrics.accuracy_score(dataset.labels, labels)
-    print("Accuracy of model", args.model, "on dataset", args.dataset, "is", acc)
+    print(f"Accuracy of model {args.model} on dataset {args.dataset} is {acc*100:.2f}%")

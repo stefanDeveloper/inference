@@ -21,7 +21,7 @@ python -m sarn.classify --model models/bart-mq "All dogs jumped over the fence."
 # ROC curve (SVG and PDF diagram)
 python -m sarn.roc microsoft/deberta-large-mnli data/evaluation.csv
 # Model accuracy on dataset
-python -m sarn.acc models/deberta-mq data/evaluation.csv
+python -m sarn.accuracy models/deberta-mq data/evaluation.csv
 # Dataset statistics
 python -m sarn.stats data/training.csv
 ```
