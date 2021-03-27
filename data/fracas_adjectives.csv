@@ -1,6 +1,0 @@
-Mickey is a small animal.,Mickey is a large animal.,contradiction
-Dumbo is a large animal.,Dumbo is a small animal.,contradiction
-Fido is not a small animal.,Fido is a large animal.,neutral
-Fido is not a large animal.,Fido is a small animal.,neutral
-Mickey is a small animal. Dumbo is a large animal.,Mickey is smaller than Dumbo.,entailment
-Mickey is a small animal. Dumbo is a large animal.,Mickey is larger than Dumbo.,contradiction
