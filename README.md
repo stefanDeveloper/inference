@@ -110,8 +110,8 @@ done
 | `microsoft/deberta-large-mnli` | 71.19%                | 47.22%                    |
 | `models/bart-mq`               | 57.63%                | 34.72%                    |
 | `models/deberta-mq`            | 61.86%                | 34.72%                    |
-| `models/bart-adj`              |                       |                           |
-| `models/deberta-adj`           |                       |                           |
+| `models/bart-adj`              | 45.76%                | 58.33%                    |
+| `models/deberta-adj`           | 42.37%                | 57.64%                    |
 
 #### ROC curves
 
