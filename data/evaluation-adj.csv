@@ -67,9 +67,9 @@ Both leading tenors are excellent. Leading tenors who are excellent are dispensa
 Both leading tenors are excellent. Leading tenors who are excellent are indispensable.,Both following tenors are indispensable.,neutral
 Both leading tenors are excellent. Leading tenors who are excellent are indispensable.,Both leading tenors are dispensable,contradiction
 Few delegates obtained interesting results from the survey.,Many delegates obtained results from the survey.,neutral
-Many delegates obtained interesting results from the survey. few delegates obtained results from the survey.,contradiction,entailment
+Many delegates obtained interesting results from the survey.,Few delegates obtained results from the survey.,contradiction
 Fewest Europeans are resident in Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,neutral
-Most Europeans are resident in Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe. fewest Europeans can travel freely within Europe.,neutral,entailment
+Most Europeans are resident in Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Fewest Europeans can travel freely within Europe.,neutral
 A many committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Scandinavia.,entailment
 A few committee members are from Sweden. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a many committee members are from Scandinavia.,neutral
 Few committee members are from Portugal. All committee members are people. All people who are from Portugal are from northern Europe.,There are few committee members from southern Europe.,neutral
@@ -79,10 +79,10 @@ At least three commissioners spend a lot of time at home.,At most three commissi
 At fewest ten commissioners spend a lot of time at home.,At most ten commissioners spend time at home.,contradiction
 At most ten commissioners spend a lot of time at home.,At fewest ten commissioners spend time at home.,contradiction
 Few delegates obtained results from the survey.,Many delegates obtained interesting results from the survey.,contradiction
-Many delegates obtained results from the survey. few delegates obtained interesting results from the survey.,neutral,neutral
+Many delegates obtained results from the survey.,Few delegates obtained interesting results from the survey.,neutral
 Fewest Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,neutral
 Most Europeans can travel freely within Europe. All Europeans are people. All people who are nonresident in Europe can travel freely within Europe.,Most Europeans are resident in Europe.,neutral
-Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe. fewest Europeans are resident in Europe.,neutral,neutral
+Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Fewest Europeans are resident in Europe.,neutral
 Most Europeans can travel freely within Europe. All Europeans are people. All people who are resident in Europe can travel freely within Europe.,Most Europeans are nonresident in Europe.,neutral
 A many committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a few committee members are from Sweden.,neutral
 A few committee members are from Scandinavia. All committee members are people. All people who are from Sweden are from Scandinavia.,At least a many committee members are from Sweden.,neutral
@@ -100,20 +100,20 @@ The residents of major eastern countries can travel freely within Europe. All re
 The residents of major western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of eastern countries have the right to live in Europe.,neutral
 Few British delegates obtained interesting results from the survey.,Many delegates obtained interesting results from the survey.,neutral
 Many British delegates obtained uninteresting results from the survey.,Many delegates obtained interesting results from the survey.,neutral
-Many British delegates obtained interesting results from the survey. few delegates obtained interesting results from the survey.,contradiction,neutral
+Many British delegates obtained interesting results from the survey.,Few delegates obtained interesting results from the survey.,contradiction
 Many British delegates obtained interesting results from the survey.,Many delegates obtained uninteresting results from the survey.,neutral
 Several Portuguese delegates got the results published in major international newspapers.,Several delegates got the results published in major national newspapers.,neutral
 Several Portuguese delegates got the results published in minor national newspapers.,Several delegates got the results published in major national newspapers.,neutral
 Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in major international newspapers.,neutral
 Several Portuguese delegates got the results published in major national newspapers.,Several delegates got the results published in minor national newspapers.,neutral
 Fewest Europeans who are resident in Europe can travel freely within Europe.,Most Europeans can travel freely within Europe.,contradiction
-Most Europeans who are resident in Europe can travel freely within Europe. fewest Europeans can travel freely within Europe.,neutral,neutral
+Most Europeans who are resident in Europe can travel freely within Europe.,Fewest Europeans can travel freely within Europe.,neutral
 A many female committee members are from Scandinavia.,At least a few committee members are from Scandinavia.,entailment
 A few female committee members are from Scandinavia.,At least a many committee members are from Scandinavia.,neutral
 Few female committee members are from northern Europe.,Few committee members are from southern Europe.,neutral
 Many female committee members are from southern Europe.,Few committee members are from southern Europe.,contradiction
 Few female committee members are from southern Europe.,Few committee members are from northern Europe.,neutral
-Few female committee members are from southern Europe. many committee members are from southern Europe.,neutral,neutral
+Few female committee members are from southern Europe.,Many committee members are from southern Europe.,neutral
 At most three female commissioners spend time at home.,At least three commissioners spend time at home.,contradiction
 At least three female commissioners spend time at home.,At most three commissioners spend time at home.,contradiction
 At fewest ten female commissioners spend time at home.,At most ten commissioners spend time at home.,contradiction
@@ -124,20 +124,20 @@ The residents of western countries can travel freely within Europe. All resident
 The residents of western countries can travel freely within Europe. All residents of major western countries are residents of western countries.,The residents of major eastern countries have the right to live in Europe.,neutral
 Few delegates obtained interesting results from the survey.,Many British delegates obtained interesting results from the survey.,contradiction
 Many delegates obtained uninteresting results from the survey.,Many British delegates obtained interesting results from the survey.,neutral
-Many delegates obtained interesting results from the survey. few British delegates obtained interesting results from the survey.,neutral,neutral
+Many delegates obtained interesting results from the survey.,Few British delegates obtained interesting results from the survey.,neutral
 Many delegates obtained interesting results from the survey.,Many British delegates obtained uninteresting results from the survey.,neutral
 Several delegates got the results published in major international newspapers.,Several Portuguese delegates got the results published in major national newspapers.,neutral
 Several delegates got the results published in minor national newspapers.,Several Portuguese delegates got the results published in major national newspapers.,neutral
 Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in major international newspapers.,neutral
 Several delegates got the results published in major national newspapers.,Several Portuguese delegates got the results published in minor national newspapers.,neutral
 Fewest Europeans can travel freely within Europe.,Most Europeans who are resident outside Europe can travel freely within Europe.,neutral
-Most Europeans can travel freely within Europe. fewest Europeans who are resident outside Europe can travel freely within Europe.,neutral,neutral
+Most Europeans can travel freely within Europe.,Fewest Europeans who are resident outside Europe can travel freely within Europe.,neutral
 A many committee members are from Scandinavia.,At least a few female committee members are from Scandinavia.,neutral
 A few committee members are from Scandinavia.,At least a many female committee members are from Scandinavia.,contradiction
 Few committee members are from northern Europe.,Few female committee members are from southern Europe.,neutral
 Many committee members are from southern Europe.,Few female committee members are from southern Europe.,neutral
 Few committee members are from southern Europe.,Few female committee members are from northern Europe.,neutral
-Few committee members are from southern Europe. many female committee members are from southern Europe.,contradiction,entailment
+Few committee members are from southern Europe.,Many female committee members are from southern Europe.,contradiction
 At most three commissioners spend time at home.,At least three male commissioners spend time at home.,neutral
 At least three commissioners spend time at home.,At most three male commissioners spend time at home.,neutral
 At fewest ten commissioners spend time at home.,At most ten female commissioners spend time at home.,neutral
