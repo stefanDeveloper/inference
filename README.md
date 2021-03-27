@@ -45,6 +45,14 @@ As model, any valid [Huggingface model](https://huggingface.co/transformers/pret
 scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/models .
 ```
 
+### Check if labels do not have typos in datasets
+
+```sh
+for i in ./data/*.csv; do
+  ./sarn/validate_datasets.py "$i"
+done
+```
+
 ## Statistics
 
 ### Dataset statistics

@@ -484,7 +484,7 @@ Every alien who did not drink any soda is hairy.,Every alien who did not drink c
 Tom and Mary were speaking to each other in a language i didn't recognize.,Tom and Mary were speaking to each other in a recognizable language i **did** recognize.,contradiction,neutral
 It is no wonder that a man of his ability is successful.,It is no wonder that a good looking man of his ability is **unsuccessful**.,contradiction,entailment
 No **less** than five children decided on the cotton candy.,No more than five children chose any mint chocolates or decided on the cotton candy.,neutral,neutral
-A blind man shouldn't play cards.,A **sighted** man shouldn‘t play cards and board games at all.,neutral,entailment
+A blind man shouldn't play cards.,A **sighted** man shouldn't play cards and board games at all.,neutral,entailment
 Tom goes to bed at the same time every night in april.,Tom goes to bed at the **different** time every night.,contradiction,neutral
 Many aliens watched some sports matches.,**few** aliens watched baseball matches.,neutral,neutral
 Doctors refused to perform a **first** stomach operation.,Doctors refused to perform a second operation.,neutral,neutral
