@@ -100,14 +100,18 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 | ------------------------------ | --------------------- | ------------------------- |
 | `facebook/bart-large-mnli`     | 65.25%                | 40.97%                    |
 | `microsoft/deberta-large-mnli` | 71.19%                | 47.22%                    |
-| `models/bart-mq`               | 57.63%                |                           |
-| `models/deberta-mq`            | 61.86%                |                           |
+| `models/bart-mq`               | 57.63%                | 34.72%                    |
+| `models/deberta-mq`            | 61.86%                | 34.72%                    |
 | `models/bart-adj`              |                       |                           |
 | `models/deberta-adj`           |                       |                           |
 
 #### ROC curves
 
-| BART                                                               | DeBERTa                                                                |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-csv.svg) | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-csv.svg) |
-| ![](diagrams/roc_models-bart-mq_data-evaluation-csv.svg)           | ![](diagrams/roc_models-deberta-mq_data-evaluation-csv.svg)            |
+| BART                                                                   | DeBERTa                                                                    |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-csv.svg)     | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-csv.svg)     |
+| ![](diagrams/roc_models-bart-mq_data-evaluation-csv.svg)               | ![](diagrams/roc_models-deberta-mq_data-evaluation-csv.svg)                |
+| ![](diagrams/roc_models-bart-adj_data-evaluation-csv.svg)              | ![](diagrams/roc_models-deberta-adj_data-evaluation-csv.svg)               |
+| ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-adj-csv.svg) | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-adj-csv.svg) |
+| ![](diagrams/roc_models-bart-mq_data-evaluation-adj-csv.svg)           | ![](diagrams/roc_models-deberta-mq_data-evaluation-adj-csv.svg)            |
+| ![](diagrams/roc_models-bart-adj_data-evaluation-adj-csv.svg)          | ![](diagrams/roc_models-deberta-adj_data-evaluation-adj-csv.svg)           |
