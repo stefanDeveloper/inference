@@ -51,20 +51,20 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 
 #### Character length
 
-| Dataset                   | avg   | median | min | max |
-| ------------------------- | ----- | ------ | --- | --- |
+| Dataset                   | avg    | median | min | max |
+| ------------------------- | ------ | ------ | --- | --- |
 | `data/training.csv`       |
-| Premises                  | 48.26 | 41     | 5   | 478 |
-| Hypotheses                | 48.93 | 42     | 5   | 478 |
+| Premises                  | 48.26  | 41     | 5   | 478 |
+| Hypotheses                | 48.93  | 42     | 5   | 478 |
 | `data/evaluation.csv`     |
-| Premises                  | 79.84 | 58     | 26  | 206 |
-| Hypotheses                | 61.57 | 50     | 26  | 186 |
+| Premises                  | 79.84  | 58     | 26  | 206 |
+| Hypotheses                | 61.57  | 50     | 26  | 186 |
 | `data/training-adj.csv`   |
-| Premises                  |       |        |     |     |
-| Hypotheses                |       |        |     |     |
+| Premises                  |        |        |     |     |
+| Hypotheses                |        |        |     |     |
 | `data/evaluation-adj.csv` |
-| Premises                  |       |        |     |     |
-| Hypotheses                |       |        |     |     |
+| Premises                  | 100.19 | 83     | 25  | 189 |
+| Hypotheses                | 86.62  | 69     | 35  | 189 |
 
 #### Word length
 
@@ -80,8 +80,8 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 | Premises                  |       |        |     |     |
 | Hypotheses                |       |        |     |     |
 | `data/evaluation-adj.csv` |
-| Premises                  |       |        |     |     |
-| Hypotheses                |       |        |     |     |
+| Premises                  | 15.44 | 12     | 5   | 31  |
+| Hypotheses                | 13.47 | 11     | 5   | 31  |
 
 #### Labels
 
@@ -90,7 +90,7 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 | `data/training.csv`       | 41'273 | 0 (0.00%)     | 20'699 (50.15%) | 20'574 (49.85%) |
 | `data/evaluation.csv`     | 118    | 15 (12.71%)   | 52 (44.07%)     | 51 (43.22%)     |
 | `data/training-adj.csv`   |        |               |                 |                 |
-| `data/evaluation-adj.csv` |        |               |                 |                 |
+| `data/evaluation-adj.csv` | 144    | 47 (32.64%)   | 84 (58.33%)     | 13 (9.03%)      |
 
 ### Model statistics
 
@@ -98,8 +98,8 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 
 | Model                          | `data/evaluation.csv` | `data/evaluation-adj.csv` |
 | ------------------------------ | --------------------- | ------------------------- |
-| `facebook/bart-large-mnli`     | 65.25%                |                           |
-| `microsoft/deberta-large-mnli` | 71.19%                |                           |
+| `facebook/bart-large-mnli`     | 65.25%                | 40.97%                    |
+| `microsoft/deberta-large-mnli` | 71.19%                | 47.22%                    |
 | `models/bart-mq`               | 57.63%                |                           |
 | `models/deberta-mq`            | 61.86%                |                           |
 | `models/bart-adj`              |                       |                           |
