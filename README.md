@@ -68,8 +68,8 @@ done
 | Premises                  | 79.84  | 58     | 26  | 206 |
 | Hypotheses                | 61.57  | 50     | 26  | 186 |
 | `data/training-adj.csv`   |
-| Premises                  |        |        |     |     |
-| Hypotheses                |        |        |     |     |
+| Premises                  | 48.93  | 44     | 14  | 212 |
+| Hypotheses                | 50.78  | 46     | 18  | 210 |
 | `data/evaluation-adj.csv` |
 | Premises                  | 100.19 | 83     | 25  | 189 |
 | Hypotheses                | 86.62  | 69     | 35  | 189 |
@@ -85,8 +85,8 @@ done
 | Premises                  | 13.03 | 10     | 5   | 34  |
 | Hypotheses                | 10.14 | 9      | 5   | 30  |
 | `data/training-adj.csv`   |
-| Premises                  |       |        |     |     |
-| Hypotheses                |       |        |     |     |
+| Premises                  | 8.89  | 8      | 3   | 29  |
+| Hypotheses                | 9.18  | 9      | 3   | 29  |
 | `data/evaluation-adj.csv` |
 | Premises                  | 15.44 | 12     | 5   | 31  |
 | Hypotheses                | 13.47 | 11     | 5   | 31  |
@@ -97,7 +97,7 @@ done
 | ------------------------- | ------ | ------------- | --------------- | --------------- |
 | `data/training.csv`       | 41'273 | 0 (0.00%)     | 20'699 (50.15%) | 20'574 (49.85%) |
 | `data/evaluation.csv`     | 118    | 15 (12.71%)   | 52 (44.07%)     | 51 (43.22%)     |
-| `data/training-adj.csv`   |        |               |                 |                 |
+| `data/training-adj.csv`   | 1'206  | 420 (34.83%)  | 749 (62.11%)    | 37 (3.07%)      |
 | `data/evaluation-adj.csv` | 144    | 47 (32.64%)   | 84 (58.33%)     | 13 (9.03%)      |
 
 ### Model statistics
