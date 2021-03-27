@@ -11,7 +11,7 @@ I didn't understand that last sentence.,I didn't understand that **first** sente
 Tom isn't a **good** coach.,Tom isn't a bad coach for his team players.,contradiction,entailment
 Some of my **worst** friends are cops and lawyers.,Some of my best friends are cops.,neutral,entailment
 I don't like **light** makeup on a young girl.,I don't like heavy makeup on a young lassie.,neutral,entailment
-At **most** five dots are red.,At least five dots are scarlet.,contradiction,neutral
+At **most** five dots are red.,At least five dots are scarlet.,neutral,neutral
 Every alien who did not watch some baseball matches is hairy.,Every alien who did not watch sports matches is **hairless**.,contradiction,entailment
 "Picasso was no clown, and he was a sarcastic commentator on a confused age, a great archivist of humanity's foolishness.","Picasso was no jester, and he was a sarcastic commentator on a **clearheaded** age, a great archivist of humanity's foolishness.",contradiction,entailment
 Very few of the children chose any mint chocolates or decided on the cotton candy.,Very **many** of the children decided on the cotton candy.,contradiction,entailment
@@ -45,7 +45,7 @@ Tom really leads no easy life.,Tom really leads no **difficult** free life.,cont
 I bought a new pair of glasses.,I bought an **old** pair of red glasses.,contradiction,neutral
 Many people in Fiji don't have access to clean drinking water.,**Few** people in Fiji have simple access to clean drinking water.,entailment,entailment
 Dogs have all the good qualities of people **while** at the same time possessing their weaknesses.,Dogs and all pets have all the good qualities of people without at the same time possessing their weaknesses.,contradiction,neutral
-At least five dots are scarlet.,At **most** five dots are red.,contradiction,entailment
+At least five dots are scarlet.,At **most** five dots are red.,neutral,entailment
 Tom has never eaten raw adult horse meat.,Tom has already eaten **cooked** horse meat.,neutral,neutral
 I could never afford a house as nice as that.,I could afford a big house as **nasty** as that.,neutral,entailment
 **More** than five children decided on the cotton candy.,Less than five children chose any mint chocolates or decided on the cotton candy.,contradiction,neutral
@@ -72,7 +72,7 @@ Every alien who did not drink some coke is **hairless**.,Every alien who did not
 I dig **nonmodern** and contemporary jazz.,I don't dig modern jazz.,neutral,neutral
 Cruz has frequently derided as amnesty any bill that confers legal status or citizenship on people living in the country illegally.,Cruz has frequently derided as amnesty any plan that confers **illegal** status or citizenship on people living in the country illegally.,neutral,neutral
 All Tom wanted was a **nasty** hot and relaxing bath.,All Tom wanted was a nice hot bath.,contradiction,entailment
-At **most** half children chose mint chocolates or decided on the cotton candy.,At least half children decided on the cotton candy.,contradiction,neutral
+At **most** half children chose mint chocolates or decided on the cotton candy.,At least half children decided on the cotton candy.,neutral,neutral
 I'm not a little girl anymore.,I'm a **grown** girl now.,entailment,entailment
 Excitement isn't good for a man of my age.,Frightful excitement is **bad** for a man of my age.,entailment,neutral
 Tom really leads no easy life.,Tom really leads a **difficult** life all those years.,entailment,entailment
@@ -181,7 +181,7 @@ Many aliens played with toy cars.,**few** aliens played with toys.,contradiction
 Most peanut farmers entered the race.,**fewest** peanut farmers entered the race early.,neutral,neutral
 Understanding a **short** document requires tracking how entities are introduced and evolve over time.,Understanding a long document requires understanding how entities are introduced.,neutral,entailment
 I want to get a **partial** denture.,I don't want to get a full perfect denture.,entailment,entailment
-At least five children chose mint chocolates or decided on the cotton candy.,At **most** five children decided on the cotton candy.,contradiction,neutral
+At least five children chose mint chocolates or decided on the cotton candy.,At **most** five children decided on the cotton candy.,neutral,neutral
 Tom really leads not **difficult** life.,Tom really leads no easy and peaceful life.,neutral,entailment
 John inherited a large fortune.,John inherited a **small** house.,neutral,neutral
 All the passengers are in mortal danger.,All the passengers are in **immortal** danger and fear.,contradiction,neutral
@@ -266,7 +266,7 @@ He has no **general** aim.,He has no specific strategic aim.,entailment,entailme
 No less than fifty children chose any mint chocolates or decided on the cotton candy.,No **morer** than fifty children decided on the cotton candy.,contradiction,neutral
 My tree had a few blossoms but no ripe fruit.,My tree had **many** blossoms but no fruit.,contradiction,neutral
 Little Sophie was not obedient.,**large** baby girl Sophie was not obedient.,neutral,entailment
-At least one man sang.,At **most** one man sang or danced.,contradiction,entailment
+At least one man sang.,At **most** one man sang or danced.,neutral,entailment
 Some people say thirteen is an **lucky** number.,Some people say thirteen is an unlucky date to propose a girl.,neutral,neutral
 I was in New York for a **many** days.,I was in New York country club for a few days.,neutral,neutral
 No meal is **incomplete** without bread.,No good meal is complete without bread.,entailment,entailment
@@ -369,7 +369,7 @@ Tom has a **many** friends in Boston subuerbs.,Tom has a few friends in Boston.,
 Few aliens played with toy cars.,**many** aliens played with toys.,neutral,neutral
 **few** of the books had typical readers.,Many of the books had typical or marginal readers.,neutral,entailment
 **more** than five children decided on the cotton candy.,Less than five children chose mint chocolates or decided on the cotton candy.,contradiction,neutral
-At least **all** children decided on the cotton candy.,At least half children chose mint chocolates or decided on the cotton candy.,contradiction,entailment
+At least **all** children decided on the cotton candy.,At least half children chose mint chocolates or decided on the cotton candy.,entailment,entailment
 "Just watched the **last** quarter hour, got bored, skipped to the magic bit, it's funnier as a gif.","Just watched the first 15 minutes, got bored, skipped to the magic bit, it's funnier as a gif.",contradiction,entailment
 Few aliens threw tennis balls.,**many** aliens threw balls.,neutral,neutral
 Tom doesn't like modern art.,Tom doesn't like **nonmodern** great art.,neutral,entailment
@@ -422,7 +422,7 @@ Tom doesn't have much interest in **indoor** sports to play.,Tom doesn't have mu
 Many people in Fiji don't have access to clean drinking water.,**few** people in Fiji don't have access to clean drinking mineral water.,neutral,entailment
 Every old member of the cabinet was **absent**.,Every member of the cabinet was present.,contradiction,neutral
 Every alien who did not watch some sports matches is hairy.,Every alien who did not watch baseball matches is **hairless**.,contradiction,neutral
-A few committee members are from Scandinavia.,At least a **many** female committee members are from Scandinavia.,neutral,neutral
+A few committee members are from Scandinavia.,At least **many** female committee members are from Scandinavia.,neutral,neutral
 I haven't made **little** progress in work.,I haven't made much progress.,neutral,neutral
 Tom hasn't bought a new pair of good shoes in three years.,Tom hasn't bought a **old** pair of shoes in three years.,neutral,neutral
 Many aliens drank some coke.,**few** aliens drank soda.,contradiction,entailment
@@ -495,7 +495,7 @@ I bought a new pair of glasses.,I bought a **old** ball.,neutral,neutral
 This isn't a **bad** sign.,This isn't a good sign of being healthy.,neutral,entailment
 Many aliens drove cars.,**few** aliens drove suvs.,neutral,neutral
 No less than five children chose any mint chocolates or decided on the cotton candy.,No **more** than five children decided on the cotton candy.,neutral,neutral
-At least half children decided on the cotton candy.,At **most** half children chose any mint chocolates or decided on the cotton candy.,contradiction,entailment
+At least half children decided on the cotton candy.,At **most** half children chose any mint chocolates or decided on the cotton candy.,neutral,entailment
 My tree had **many** blossoms but no ripe fruit.,My tree had a few blossoms but no fruit.,neutral,neutral
 "We combed police records of the incident but found no unexpected mention of witnesses seeing a **short**, bearded man.","We combed police records of the incident but found no mention of witnesses seeing a tall, bearded man.",neutral,neutral
 You're **still** children.,You're no longer kids.,contradiction,entailment
