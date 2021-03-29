@@ -1,10 +1,3 @@
-"""
-Example Usage:
-
-  python3 -m lit.main
-
-"""
-
 import argparse
 from lit_nlp import dev_server
 from lit_nlp import server_flags
