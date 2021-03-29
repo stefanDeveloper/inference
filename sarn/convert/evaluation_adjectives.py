@@ -11,7 +11,7 @@ from ..labels import Label
 
 if __name__ == "__main__":
     sequences, labels = read_dataset("data/evaluation.csv")
-    with open("data/evaluation_adjectives.csv", "w", newline="") as f:
+    with open("data/evaluation-adj.csv", "w", newline="") as f:
         writer = csv.writer(f, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL)
         for row, label in zip(sequences, labels):
             for p, h in replace_adjectives(row[0], row[1]):

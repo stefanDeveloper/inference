@@ -64,6 +64,45 @@ See [`data/README.md`](data/README.md) for more information.
 - `data/training.csv`: Training dataset for quantifiers and monotonicity in reasoning tasks with opposite adjectives
 - `data/evaluation.csv`: Evaluation dataset for quantifiers and monotonicity in reasoning tasks with opposite adjectives
 
+### Creating the datasets
+
+```sh
+source .venv/bin/activate
+
+# data/training.csv
+wget https://github.com/verypluming/MED/raw/master/MED.tsv
+python -m sarn.convert.med
+wget https://github.com/verypluming/HELP/raw/master/output_en/pmb_train_v1.0.tsv
+python -m sarn.convert.help
+cat data/med.csv data/help.csv > data/training.csv
+
+# data/evaluation.csv
+wget https://nlp.stanford.edu/~wcmac/downloads/fracas.xml
+python -m sarn.convert.fracas
+wget -O diagnostic-full.tsv https://www.dropbox.com/s/ju7d95ifb072q9f/diagnostic-full.tsv?dl=1 
+python -m sarn.convert.superglue
+cat data/fracas.csv data/superglue.csv > data/evaluation.csv
+
+# data/training-adj.csv
+wget https://github.com/verypluming/MED/raw/master/MED.tsv
+python -m sarn.convert.med_adjectives
+# manual step here:
+# - label data/med_adjectives_1.csv by hand (third column)
+# - label data/med_adjectives_2.csv by hand (third column)
+# - remove fourth column in both files
+wget https://nlp.stanford.edu/~wcmac/downloads/fracas.xml
+python -m sarn.convert.fracas_adjectives
+cat data/med_adjectives_1.csv data/med_adjectives_2.csv data/fracas_adjectives.csv > data/training-adj.csv
+python -m sarn.validate_datasets data/training-adj.csv
+
+# data/evaluation-adj.csv
+python -m sarn.convert.evaluation_adjectives
+# manual step here:
+# - label data/evaluation-adj.csv by hand (third column)
+# - remove fourth column
+python -m sarn.validate_datasets data/evaluation-adj.csv
+```
+
 ### Dataset statistics
 
 #### Character length
@@ -117,6 +156,27 @@ See [`data/README.md`](data/README.md) for more information.
 - `models/deberta-mq`: finetuned version of `microsoft/deberta-large-mnli` on `data/training.csv`
 - `models/bart-adj`: finetuned version of `models/bart-mq` on `data/training-adj.csv`
 - `models/deberta-adj`: finetuned version of `models/deberta-mq` on `data/training-adj.csv`
+
+### Creating the models
+
+```sh
+source .venv/bin/activate
+
+# facebook/bart-large-mnli and microsoft/deberta-large-mnli will automatically
+# be downloaded from huggingface.co when used
+
+# models/bart-mq
+python -m sarn.train --output-dir "models/bart-mq" --log-dir "logs/bart-mq" "facebook/bart-large-mnli" "data/training.csv"
+
+# models/deberta-mq
+python -m sarn.train --output-dir "models/deberta-mq" --log-dir "logs/deberta-mq" "microsoft/deberta-large-mnli" "data/training.csv"
+
+# models/bart-adj
+python -m sarn.train --output-dir "models/bart-adj" --log-dir "logs/bart-adj" "facebook/bart-large-mnli" "data/training-adj.csv"
+
+# models/deberta-adj
+python -m sarn.train --output-dir "models/deberta-adj" --log-dir "logs/deberta-adj" "microsoft/deberta-large-mnli" "data/training-adj.csv"
+```
 
 ### Model statistics
 

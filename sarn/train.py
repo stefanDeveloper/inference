@@ -27,7 +27,7 @@ parser.add_argument("--epochs", type=float, default=1)
 parser.add_argument("--train-batch-size", type=int, default=4)
 parser.add_argument("--test-batch-size", type=int, default=16)
 parser.add_argument("--log-frequency", type=int, default=10)
-parser.add_argument("--max-checkpoints", type=int, default=2)
+parser.add_argument("--max-checkpoints", type=int, default=1)
 parser.add_argument("--resume", action="store_true")
 parser.add_argument(
     "--cpu", action="store_true"
