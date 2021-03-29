@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
-
-# Script only checks if the third column has valid values
-
+"""
+Script only checks if the third column has valid values
+"""
 import argparse
 
 import csv

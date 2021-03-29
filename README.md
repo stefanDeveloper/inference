@@ -25,12 +25,14 @@ python -m sarn.accuracy models/deberta-mq data/evaluation.csv
 # Dataset statistics
 python -m sarn.stats data/training.csv
 # Language Interpretability Tool
-python -m lit \
-  --models "./models/deberta-mq" \
-           "./models/bart-mq" \
-           "facebook/bart-large-mnli" \
+python -m sarn.lit \
+  --models "facebook/bart-large-mnli" \
            "microsoft/deberta-large-mnli" \
-  --datasets "./data/evaluation.csv" "./data/training.csv" \
+           "./models/bart-mq" \
+           "./models/deberta-mq" \
+           "./models/bart-adj" \
+           "./models/deberta-adj" \
+  --datasets "./data/evaluation.csv" "./data/evaluation-adj.csv" \
   --cache_dir=cache_dir
 ```
 
@@ -49,7 +51,7 @@ scp -r ${COLI_USER:?}@last.cl.uni-heidelberg.de:/mnt/semproj/sem_proj20/proj1/mo
 
 ```sh
 for i in ./data/*.csv; do
-  ./sarn/validate_datasets.py "$i"
+  python3 -m sarn.validate_datasets "$i"
 done
 ```
 
