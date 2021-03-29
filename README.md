@@ -55,7 +55,14 @@ for i in ./data/*.csv; do
 done
 ```
 
-## Statistics
+## Datasets
+
+See [`data/README.md`](data/README.md) for more information.
+
+- `data/training.csv`: Training dataset for quantifiers and monotonicity in reasoning tasks
+- `data/evaluation.csv`: Evaluation dataset for quantifiers and monotonicity in reasoning tasks
+- `data/training.csv`: Training dataset for quantifiers and monotonicity in reasoning tasks with opposite adjectives
+- `data/evaluation.csv`: Evaluation dataset for quantifiers and monotonicity in reasoning tasks with opposite adjectives
 
 ### Dataset statistics
 
@@ -101,6 +108,15 @@ done
 | `data/evaluation.csv`     | 118    | 15 (12.71%)   | 52 (44.07%)     | 51 (43.22%)     |
 | `data/training-adj.csv`   | 1'206  | 420 (34.83%)  | 749 (62.11%)    | 37 (3.07%)      |
 | `data/evaluation-adj.csv` | 144    | 47 (32.64%)   | 84 (58.33%)     | 13 (9.03%)      |
+
+## Models
+
+- [`facebook/bart-large-mnli`](https://huggingface.co/facebook/bart-large-mnli): Pretrained model of [BART](https://arxiv.org/abs/1910.13461) finetuned on [MultiNLI](https://cims.nyu.edu/~sbowman/multinli/)
+- [`microsoft/deberta-large-mnli`](https://huggingface.co/microsoft/deberta-large-mnli): Pretrained model of [DeBERTa](https://arxiv.org/abs/2006.03654) finetuned on [MultiNLI](https://cims.nyu.edu/~sbowman/multinli/)
+- `models/bart-mq`: finetuned version of `facebook/bart-large-mnli` on `data/training.csv`
+- `models/deberta-mq`: finetuned version of `microsoft/deberta-large-mnli` on `data/training.csv`
+- `models/bart-adj`: finetuned version of `models/bart-mq` on `data/training-adj.csv`
+- `models/deberta-adj`: finetuned version of `models/deberta-mq` on `data/training-adj.csv`
 
 ### Model statistics
 
