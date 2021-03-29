@@ -15,5 +15,9 @@ if __name__ == "__main__":
         reader = csv.reader(f, delimiter=",", quotechar='"')
         for i, row in enumerate(reader):
             label = row[2]
-            if label != "contradiction" and  label != "neutral" and  label != "entailment":
+            if (
+                label != "contradiction"
+                and label != "neutral"
+                and label != "entailment"
+            ):
                 print(f"Invalid value in line {i}: {label}")
