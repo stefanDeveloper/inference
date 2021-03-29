@@ -79,7 +79,7 @@ cat data/med.csv data/help.csv > data/training.csv
 # data/evaluation.csv
 wget https://nlp.stanford.edu/~wcmac/downloads/fracas.xml
 python -m sarn.convert.fracas
-wget -O diagnostic-full.tsv https://www.dropbox.com/s/ju7d95ifb072q9f/diagnostic-full.tsv?dl=1 
+wget -O diagnostic-full.tsv https://www.dropbox.com/s/ju7d95ifb072q9f/diagnostic-full.tsv?dl=1
 python -m sarn.convert.superglue
 cat data/fracas.csv data/superglue.csv > data/evaluation.csv
 
@@ -194,7 +194,11 @@ python -m sarn.train --output-dir "models/deberta-adj" --log-dir "logs/deberta-a
 #### ROC curves
 
 > An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds.
-> 
+> [...]
+> AUC stands for "Area under the ROC Curve." That is, AUC measures the entire two-dimensional area underneath the entire ROC curve (think integral calculus) from (0,0) to (1,1).
+> [...]
+> AUC provides an aggregate measure of performance across all possible classification thresholds. One way of interpreting AUC is as the probability that the model ranks a random positive example more highly than a random negative example.
+>
 > &mdash; <cite>[Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)</cite>
 
 | BART                                                                   | DeBERTa                                                                    |
