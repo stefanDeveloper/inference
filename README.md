@@ -86,7 +86,7 @@ cat data/fracas.csv data/superglue.csv > data/evaluation.csv
 # data/training-adj.csv
 wget https://github.com/verypluming/MED/raw/master/MED.tsv
 python -m sarn.convert.med_adjectives
-# manual step here:
+# manual step here (you may modify sentences where it makes sense):
 # - label data/med_adjectives_1.csv by hand (third column)
 # - label data/med_adjectives_2.csv by hand (third column)
 # - remove fourth column in both files
@@ -97,7 +97,7 @@ python -m sarn.validate_datasets data/training-adj.csv
 
 # data/evaluation-adj.csv
 python -m sarn.convert.evaluation_adjectives
-# manual step here:
+# manual step here (you may modify sentences where it makes sense):
 # - label data/evaluation-adj.csv by hand (third column)
 # - remove fourth column
 python -m sarn.validate_datasets data/evaluation-adj.csv
