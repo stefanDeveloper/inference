@@ -194,7 +194,8 @@ python -m sarn.train --output-dir "models/deberta-adj" --log-dir "logs/deberta-a
 #### ROC curves
 
 > An ROC curve (receiver operating characteristic curve) is a graph showing the performance of a classification model at all classification thresholds.
-> - [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)
+> 
+> &mdash; <cite>[Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)</cite>
 
 | BART                                                                   | DeBERTa                                                                    |
 | ---------------------------------------------------------------------- | -------------------------------------------------------------------------- |
