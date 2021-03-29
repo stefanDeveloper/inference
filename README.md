@@ -1,6 +1,6 @@
-# inference
+# SARN: Inference
 
-Quantifiers and monotonicity in reasoning tasks
+Quantifiers and monotonicity (and opposite adjectives) in reasoning tasks
 
 ## Setup
 
