@@ -203,9 +203,9 @@ python -m sarn.train --output-dir "models/deberta-adj" --log-dir "logs/deberta-a
 
 | BART                                                                   | DeBERTa                                                                    |
 | ---------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-csv.svg)     | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-csv.svg)     |
-| ![](diagrams/roc_models-bart-mq_data-evaluation-csv.svg)               | ![](diagrams/roc_models-deberta-mq_data-evaluation-csv.svg)                |
-| ![](diagrams/roc_models-bart-adj_data-evaluation-csv.svg)              | ![](diagrams/roc_models-deberta-adj_data-evaluation-csv.svg)               |
-| ![](diagrams/roc_facebook-bart-large-mnli_data-evaluation-adj-csv.svg) | ![](diagrams/roc_microsoft-deberta-large-mnli_data-evaluation-adj-csv.svg) |
-| ![](diagrams/roc_models-bart-mq_data-evaluation-adj-csv.svg)           | ![](diagrams/roc_models-deberta-mq_data-evaluation-adj-csv.svg)            |
-| ![](diagrams/roc_models-bart-adj_data-evaluation-adj-csv.svg)          | ![](diagrams/roc_models-deberta-adj_data-evaluation-adj-csv.svg)           |
+| ![](diagrams/roc/roc_facebook-bart-large-mnli_data-evaluation-csv.svg)     | ![](diagrams/roc/roc_microsoft-deberta-large-mnli_data-evaluation-csv.svg)     |
+| ![](diagrams/roc/roc_models-bart-mq_data-evaluation-csv.svg)               | ![](diagrams/roc/roc_models-deberta-mq_data-evaluation-csv.svg)                |
+| ![](diagrams/roc/roc_models-bart-adj_data-evaluation-csv.svg)              | ![](diagrams/roc/roc_models-deberta-adj_data-evaluation-csv.svg)               |
+| ![](diagrams/roc/roc_facebook-bart-large-mnli_data-evaluation-adj-csv.svg) | ![](diagrams/roc/roc_microsoft-deberta-large-mnli_data-evaluation-adj-csv.svg) |
+| ![](diagrams/roc/roc_models-bart-mq_data-evaluation-adj-csv.svg)           | ![](diagrams/roc/roc_models-deberta-mq_data-evaluation-adj-csv.svg)            |
+| ![](diagrams/roc/roc_models-bart-adj_data-evaluation-adj-csv.svg)          | ![](diagrams/roc/roc_models-deberta-adj_data-evaluation-adj-csv.svg)           |
